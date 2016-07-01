@@ -1,0 +1,21 @@
+Scoring goals - statisitcs of the main goal scorer
+
+play maker - middle field, number of passes to the front
+
+goal keeper - how well can he protect
+
+
+
+
+
+Euro 2016 data (courtesy of Andreas Groll, LMU)
+----------
+EM2004.2012.publ.txt : aggregated data for the 2004-2012 period.
+
+
+
+FIFA2016.txt, UEFA2016.txt contain both FIFA and UEFA rank and points
+QuotenEM2016.txt contains the ODDSET odds a few days before the tournament start
+Neues2016.txt contains all factors describing the teams' structures (except for the average age)
+Wert2016.txt contains the average market value of all teams collected a few days before the tournament start together with the average age of the team
+

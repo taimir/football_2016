@@ -1,0 +1,26 @@
+Verein	Altersschnitt	Durchschnittswert
+Deutschland	25,9	24,43 
+Spanien	28,1	24,24 
+Belgien	26,4	20,04 
+Frankreich	27,8	19,74 
+England	25,8	19,39 
+Portugal	28,4	13,99 
+Kroatien	26,7	11,84 
+Italien	28,9	11,83 
+Tuerkei	26,9	8,09 
+Polen	27,5	7,62 
+Schweiz	26,1	7,50 
+Wales	27,3	7,33 
+Russland	29,3	5,80 
+Ukraine	27,9	5,59 
+Oesterreich	27,7	5,58 
+Slowakei	28,9	3,96 
+Irland	29,8	3,88 
+Schweden	27,8	3,78 
+Tschechien	29,2	2,80 
+Rumaenien	28,7	2,43 
+Island	27,6	1,81 
+Albanien	27,6	1,78 
+Nordirland	28,5	1,56 
+Ungarn	28	1,19 
+

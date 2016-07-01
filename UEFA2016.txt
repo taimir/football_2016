@@ -1,0 +1,55 @@
+UEFA_platz	Verein	Punkte	Startpl‰tze
+1	Spanien	167500	7
+2	Deutschland	115000	7
+3	England	114000	8
+4	Russland	57500	5
+5	Italien	69000	6
+6	Frankreich	66500	6
+7	Portugal	63000	6
+8	Ukraine	49000	5
+9	Belgien	37000	5
+10	Tschechische Rep.	36500	5
+11	Norwegen	29000	4
+12	Tuerkei	33000	5
+13	Niederlande	34500	6
+14	Polen	22000	4
+15	Dänemark	22000	4
+16	Griechenland	27000	5
+17	Schweiz	26500	5
+18	Belarus	20500	4
+19	Liechtenstein	5000	1
+20	Schweden	19000	4
+21	Kasachstan	18500	4
+22	Kroatien	18000	4
+23	Aserbaidschan	17500	4
+24	Serbien	17000	4
+25	Oesterreich	19000	5
+26	Slowakei	15000	4
+27	Zypern	12000	4
+28	Schottland	12000	4
+29	Israel	9000	4
+30	Rumänien	9000	4
+31	Albanien	8500	4
+32	Lettland	6500	4
+33	Armenien	6500	4
+34	Ungarn	6500	4
+35	Bosnien und Herzegowina	6000	4
+36	Wales	6000	4
+37	EJR Mazedonien	6000	4
+38	Moldawien	5000	4
+39	Island	4500	4
+40	Montenegro	4000	4
+41	Finnland	4000	4
+42	Bulgarien	4000	4
+43	Estland	4000	4
+44	Slowenien	4000	4
+45	Malta	3500	4
+46	Luxemburg	3000	4
+47	Litauen	3000	4
+48	Gibraltar	1500	2
+49	Nordirland	3000	4
+50	Republik Irland	3500	5
+51	Georgien	2500	4
+52	Faeroeer-Inseln	1500	4
+53	Andorra	500	3
+54	San Marino	0	3

@@ -1,0 +1,26 @@
+Verein	Quoten
+Frankreich	4,25
+Deutschland	4,75
+Spanien	5,75
+England	8,75
+Belgien	11,00
+Italien	15,00
+Portugal	18,00
+Kroatien	25,00
+Oesterreich	30,00
+Polen	40,00
+Wales	50,00
+Tuerkei	50,00
+Tschechien	50,00
+Schweiz	50,00
+Island	50,00
+Russland	60,00
+Slowakei	80,00
+Schweden	80,00
+Ukraine	80,00
+Irland	80,00
+Rumaenien	100,00
+Albanien	100,00
+Ungarn	100,00
+Nordirland	200,00
+

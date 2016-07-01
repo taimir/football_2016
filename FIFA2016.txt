@@ -1,0 +1,52 @@
+Rang	Verein	Punkte
+6	Spanien	1267
+8	Portugal	1181
+10	Oesterreich	1077
+11	England	1069   
+12	Italien	982
+14	Niederlande	959
+15	Schweiz	948
+17	Frankreich	925
+18	Tuerkei	919
+19	Ukraine	894
+20	Ungarn	886
+20	Bosnien und Herzegowina	886
+22	Rumaenien	878
+24	Slowakei	852
+25	Nordirland	851
+26	Wales	846
+27	Kroatien	842
+27	Polen	842
+29	Russland	828
+30	Tschechische Republik	815
+33	Republik Irland	768
+34	Island	751
+35	Schweden	735
+38	Daenemark	697
+40	Griechenland	678
+42	Albanien	667
+43	Schottland	659
+51	Norwegen	593
+54	Serbien	576
+57	Slowenien	567
+67	Finnland	536
+69	Bulgarien	518
+71	Israel	513
+78	Belarus	442
+84	Zypern	407
+89	FŠršer	383
+90	Montenegro	382
+94	Estland	360
+104	Lettland	330
+110	Armenien	315
+112	Kasachstan	312
+127	Litauen	282
+137	Georgien	260
+138	Aserbaidschan	252
+139	EJR Mazedonien	250
+146	Luxemburg	221
+159	Moldawien	165
+166	Malta	141
+168	Liechtenstein	128
+200	San Marino	20
+202	Andorra	11

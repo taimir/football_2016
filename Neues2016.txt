@@ -1,0 +1,25 @@
+Verein	CL-Spieler	UEFA-Cup-Spieler	Grenzland	Alter-Trainer	Nation-Trainer	Legionaere	max1	max2
+Deutschland	6	1	1	56	1	10	5	2
+Spanien	6	2	1	65	1	10	5	3
+Belgien	2	3	1	47	1	19	3	3
+Frankreich	4	1	1	47	1	18	2	2
+England	2	5	0	68	1	0	5	5
+Portugal	2	0	0	61	1	15	4	2
+Kroatien	2	1	0	62	1	17	4	2
+Italien	0	0	1	46	1	5	6	3
+Tuerkei	0	0	0	62	1	5	6	4
+Polen	1	1	0	58	1	13	3	2
+Schweiz	0	0	1	52	1	18	3	2
+Wales	1	2	0	46	1	23	3	2
+Russland	0	0	0	45	1	7	5
+Ukraine	0	7	0	67	1	6	6	5
+Oesterreich	1	0	0	55	0	22	3	2
+Slowakei	0	1	0	62	1	20	3	2
+Irland	0	0	0	64	0	23	3	3
+Schweden	0	0	0	58	1	20	3	1
+Tschechien	0	0	0	52	1	14	4	3
+Rumaenien	0	0	0	66	1	14	4	3
+Island	0	0	0	67	0	23	2	1
+Albanien	0	0	0	59	0	1	2	2
+Nordirland	0	0	0	46	0	23	2	1
+Ungarn	0	0	0	53	0	12	5	2
