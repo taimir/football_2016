@@ -59,4 +59,10 @@ View(neues16)
 
 # Ideas:
 # try to come up with a probabilistic intuition behind weighting the years of the presented championships
+# If group games are to be used, consider the following strategy: if a strong team is to be paired
+# with a weaker in the next round (finals) if it ranks on second place, then consider not playing 
+# with top-performance in the group games.
 
+# The additional info provided may be tricky: Olympic medals show the general sport fitness of the country 
+# but is not (always) representative for football. For example Portugal is a strong team, but have
+# won embarasingly few medals.
