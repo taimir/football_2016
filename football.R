@@ -54,3 +54,12 @@ View(neues16)
 # The additional info provided may be tricky: Olympic medals show the general sport fitness of the country 
 # but is not (always) representative for football. For example Portugal is a strong team, but have
 # won embarasingly few medals.
+
+
+library(caret)
+rf_model <- train(result ~ ., data=playoffs, 
+                  method="rf", 
+                  trControl=trainControl(method="cv", number=5), 
+                  prox=TRUE, 
+                  allowParallel=TRUE)
+
