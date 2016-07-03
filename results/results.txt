@@ -1,0 +1,44 @@
+Results:
+
+rf_model <- train(result ~ ., data=playoffs, 
+                  method="rf", 
+                  trControl=trainControl(method="cv", number=20), 
+                  prox=TRUE, 
+                  allowParallel=TRUE, 
+                  ntree=1000)
+				  
+random forest, using playoffs.csv with result "win", "loss", "draw":
+52% accuracy with 5-fold cross-validation
+
+multi variate logistic regression, same as above
+50% accuracy on training set
+
+
+Next: use all of the data
+52% accuracy with random forests
+89% accuracy with validation set => obvious overfitting
+we checked on validation set => 35% accuracy, almost identical with random guessing
+
+Reason was that we had the "team" and "guest" attributes in, and they made the model overfit.
+
+
+Used FSelector to find the features with the most info-gain.
+Top were:
+market_value, nat_coach, host, vicinity
+
+Next we tried these features only:
+rf still 52% accuracy.
+
+In the logistic regresion: we were doing the decisions with a hard comparison 
+(maxarg, which.max() in R, of the softmax values) so far. This lead to the
+observation that actually a lot of cases were ~ 0.5/0.5 win loss, with a small
+probability for "draw". We thought it would be better to do a reject region instead:
+if there's no absolute winner, e.g. above 50% probability, it's a draw.
+
+We got 61% accuracy on the validation set. Additionally we reasoned that it would be
+better if we model the predicted variable as a bernoulli, with a reject region for draw,
+not as a thernery categorical.
+
+
+
+
