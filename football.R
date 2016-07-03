@@ -1,41 +1,11 @@
 # Load the data into R
-playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
-# structural attibutes
-# EM
+playoffs = read.csv("data/playoffs.csv", header=TRUE, sep=",")
 
 # format as factors
 playoffs$host = as.factor(playoffs$host)
 playoffs$host_opponent = as.factor(playoffs$host_opponent)
-playoffs$vicinity = as.factor(playoffs$vicinity)
-playoffs$vicinity_opponent = as.factor(playoffs$vicinity_opponent)
-
-playoffs$id = NULL
-playoffs$max1 = NULL
-playoffs$max2 = NULL
-playoffs$max1_opponent = NULL
-playoffs$max2_opponent = NULL
-playoffs$vicinity = NULL
-playoffs$vicinity_opponent = NULL
-playoffs$foreigners = NULL
-playoffs$foreigners_opponent = NULL
-playoffs$age_coach = NULL
-playoffs$age_coach_opponent = NULL
-
-# thos are going to be replaced by our values
-playoffs$GDP = NULL
-playoffs$GDP_opponent = NULL
-playoffs$population = NULL
-playoffs$population_opponent = NULL
-
-# remove some atributes to simplify for now
-# those will not be removed in the final model
-playoffs$team = NULL
-playoffs$opponent = NULL
-playoffs$phase = NULL
-playoffs$stage = NULL
-
-# transform the year to the distance of the current competition
-playoffs$year = 2016 - playoffs$year
+playoffs$nationality_coach = as.factor(playoffs$nationality_coach)
+playoffs$nationality_coach_opponent = as.factor(playoffs$nationality_coach_opponent)
 
 
 population = read.csv("data/additional_info_countries.txt", header=TRUE, sep="\t")
