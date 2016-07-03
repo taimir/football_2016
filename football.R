@@ -1,9 +1,15 @@
 
 # Load the data into R
 playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
-playoffs$Heim = as.factor(playoffs$Heim)
+#playoffs$Heim = as.factor(playoffs$Heim)
 # structural attibutes
 # EM
+
+# format as factors
+playoffs$host = as.factor(playoffs$host)
+playoffs$host_opponent = as.factor(playoffs$host_opponent)
+playoffs$vicinity = as.factor(playoffs$vicinity)
+playoffs$vicinity_opponent = as.factor(playoffs$vicinity_opponent)
 
 playoffs$id = NULL
 playoffs$max1 = NULL
