@@ -1,25 +1,23 @@
 
 # Load the data into R
-playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep=" ")
+playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
 playoffs$Heim = as.factor(playoffs$Heim)
 # structural attibutes
 # EM
 
 playoffs$id = NULL
-playoffs$Max1 = NULL
-playoffs$Max2 = NULL
-playoffs$Max1_gegner = NULL
-playoffs$Max2_gegner = NULL
-playoffs$Grenzland = NULL
-playoffs$Grenzland_gegner = NULL
-playoffs$Legionaere = NULL
-playoffs$Legionaere_gegner = NULL
-playoffs$FIFA.Punkte = NULL
-playoffs$FIFA.Punkte_gegner = NULL
-playoffs$Population = NULL
-playoffs$Population_gegner = NULL
-playoffs$Alter.Trainer = NULL
-playoffs$Alter.Trainer_gegner = NULL
+playoffs$max1 = NULL
+playoffs$max2 = NULL
+playoffs$max1_opponent = NULL
+playoffs$max2_opponent = NULL
+playoffs$vicinity = NULL
+playoffs$vicinity_opponent = NULL
+playoffs$foreigners = NULL
+playoffs$foreigners_opponent = NULL
+playoffs$population = NULL
+playoffs$population_opponent = NULL
+playoffs$age_coach = NULL
+playoffs$age_coach_opponent = NULL
 
 
 # Important attributes:
