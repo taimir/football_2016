@@ -1,7 +1,5 @@
-
 # Load the data into R
 playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
-#playoffs$Heim = as.factor(playoffs$Heim)
 # structural attibutes
 # EM
 
@@ -20,11 +18,27 @@ playoffs$vicinity = NULL
 playoffs$vicinity_opponent = NULL
 playoffs$foreigners = NULL
 playoffs$foreigners_opponent = NULL
-playoffs$population = NULL
-playoffs$population_opponent = NULL
 playoffs$age_coach = NULL
 playoffs$age_coach_opponent = NULL
 
+# thos are going to be replaced by our values
+playoffs$GDP = NULL
+playoffs$GDP_opponent = NULL
+playoffs$population = NULL
+playoffs$population_opponent = NULL
+
+# remove some atributes to simplify for now
+# those will not be removed in the final model
+playoffs$team = NULL
+playoffs$opponent = NULL
+playoffs$phase = NULL
+playoffs$stage = NULL
+
+# transform the year to the distance of the current competition
+playoffs$year = 2016 - playoffs$year
+
+
+population = read.csv("data/additional_info_countries.txt", header=TRUE, sep="\t")
 
 # Important attributes:
 # Tore, Team, Gegner, Heim, Quoten, Marktwert, Fifa.Platz, UEFA.Platz, UEFA.Punkte, CL.Spieler, 
