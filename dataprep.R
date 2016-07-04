@@ -50,3 +50,39 @@ playoffs$age_opponent = NULL
 playoffs$year = 2016 - playoffs$year
 
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
+
+# add column with scores accoring to the performance in the previous three years
+scores = read.csv("data/Team_scores_08-12.txt", header=TRUE, sep="\t")
+scores = as.data.frame(scores)
+playoffs$past_scores = rep(0, length(playoffs$team))
+playoffs$past_scores_opponent = rep(0, length(playoffs$team))
+for (i in 1:length(scores[["Team"]])) {
+  team = as.character(scores[i,"Team"])
+  sc4 = scores[i,"Score_04"]
+  sc8 = scores[i,"Score_08"]
+  sc12 = scores[i,"Score_12"]
+  for (j in 1:length(playoffs$team)){
+    if(as.character(playoffs[j,]$team) == team){
+      if(playoffs[j,]$year == 2004){
+        playoffs[j,"past_scores"] = sc4
+      }else if(playoffs[j,]$year == 2008){
+        playoffs[j,"past_scores"] = sc8
+      }else{
+        playoffs[j,"past_scores"] = sc12
+      }
+    }
+  }
+  for (j in 1:length(playoffs$team)){
+    if(as.character(playoffs[j,]$opponent) == team){
+      if(playoffs[j,]$year == 2004){
+        playoffs[j,"past_scores_opponent"] = sc4
+      }else if(playoffs[j,]$year == 2008){
+        playoffs[j,"past_scores_opponent"] = sc8
+      }else{
+        playoffs[j,"past_scores_opponent"] = sc12
+      }
+    }
+  }
+}
+write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
+
