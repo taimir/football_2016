@@ -1,7 +1,7 @@
 playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
 
 # discretize the result of a game to a factor of 3 levels
-# playoffs$result = NA
+playoffs$result = NA
 for(team1 in playoffs$team) {
   for(team2 in playoffs$opponent) {
     goals1 = playoffs[playoffs$team == team1 & playoffs$opponent == team2,]$goals
@@ -20,8 +20,8 @@ playoffs$max1 = NULL
 playoffs$max2 = NULL
 playoffs$max1_opponent = NULL
 playoffs$max2_opponent = NULL
-playoffs$vicinity = NULL
-playoffs$vicinity_opponent = NULL
+# playoffs$vicinity = NULL
+# playoffs$vicinity_opponent = NULL
 playoffs$foreigners = NULL
 playoffs$foreigners_opponent = NULL
 playoffs$age_coach = NULL
@@ -40,7 +40,11 @@ playoffs$opponent = NULL
 playoffs$phase = NULL
 playoffs$stage = NULL
 playoffs$goals = NULL
-playoffs$X = NULL
+
+playoffs$age = NULL
+playoffs$age_opponent = NULL
+# playoffs$nationality_coach = NULL
+# playoffs$nationality_coach_opponent = NULL
 
 # transform the year to the distance of the current competition
 playoffs$year = 2016 - playoffs$year
