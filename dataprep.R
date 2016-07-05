@@ -123,18 +123,32 @@ playoffs = append_info(playoffs, nat_info, "population")
 
 # normalize the features GDP and populations since they yield super large numbers in comaprison
 # to the other features.
-playoffs[, "population"] = 
-  apply(t(playoffs[, "population"]), 2, FUN = function(x){x/max(playoffs[, "population"])})
-playoffs[, "population_opponent"] = 
-  apply(t(playoffs[, "population_opponent"]), 2, FUN = function(x){x/max(playoffs[, "population_opponent"])})
-playoffs[, "GDP"] = 
-  apply(t(playoffs[, "GDP"]), 2, FUN = function(x){x/max(playoffs[, "GDP"])})
-playoffs[, "GDP_opponent"] = 
-  apply(t(playoffs[, "GDP_opponent"]), 2, FUN = function(x){x/max(playoffs[, "GDP_opponent"])})
+# playoffs[, "population"] = 
+#   apply(t(playoffs[, "population"]), 2, 
+#         FUN = function(x){(x-min(playoffs[, "population"]))/(max(playoffs[, "population"])-min(playoffs[, "population"]))})
+# playoffs[, "population_opponent"] = 
+#   apply(t(playoffs[, "population_opponent"]), 2, 
+#         FUN = function(x){(x-min(playoffs[, "population_opponent"]))/(max(playoffs[, "population_opponent"])-min(playoffs[, "population_opponent"]))})
+# playoffs[, "GDP"] = 
+#   apply(t(playoffs[, "GDP"]), 2, 
+#         FUN = function(x){(x-min(playoffs[, "GDP"]))/(max(playoffs[, "GDP"])-min(playoffs[, "GDP"]))})
+# playoffs[, "GDP_opponent"] = 
+#   apply(t(playoffs[, "GDP_opponent"]), 2, 
+#         FUN = function(x){(x-min(playoffs[, "GDP_opponent"]))/(max(playoffs[, "GDP_opponent"])-min(playoffs[, "GDP_opponent"]))})
+
+# normalization of all not factor-features
+for (col_name in names(playoffs)) {
+  if (!is.factor(playoffs[,col_name])){
+    playoffs[,col_name] = apply(t(playoffs[, col_name]), 2, 
+                FUN = function(x){(x-min(playoffs[, col_name]))/(max(playoffs[, col_name])-min(playoffs[, col_name]))})
+  }
+}
 
 # playoffs$team = NULL
 # playoffs$opponent = NULL
 playoffs$year = NULL
+
+
 
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 
