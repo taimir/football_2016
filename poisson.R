@@ -3,14 +3,14 @@ playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
 playoffs = playoffs[,c("team", "opponent", "goals")]
 
 team = levels(playoffs$team)
-valid_indices = sample(1:186, 20)
+valid_indices = sample(1:186, 30)
 valid_data = playoffs[valid_indices,]
-valid_data_res = valid_data$result
+valid_data_goals = valid_data$goals
 valid_data$goals = NULL
 
 train_data = playoffs[-valid_indices,]
 
-model = glm(goals ~ team + opponent, data = playoffs, family = poisson())
+model = glm(goals ~ team + opponent, data = train_data, family = poisson())
 
 p = 22
 w = model$coefficients
@@ -32,14 +32,13 @@ plot(exp(attack), exp(defence), pch=".")
 text(exp(attack), exp(defence), labels=team, cex=0.5)
 
 grid_scores = function(att) {
-  team = names(attack)
-  opponent = names(defence)
   return(exp(att - defence))
 }
 
 res = data.frame(NA, NA, NA)
 names(res) = c("team", "opponent", "result")
 scores = lapply(attack, FUN = grid_scores)
+
 for(team in names(scores)){
   opponents = scores[[team]]
   for(opp in names(opponents)) {
@@ -53,15 +52,20 @@ for(team in names(scores)){
 
 res = res[-1,]
 reject = 0.2
+
 res$res = NA
 res$result = as.numeric(res$result)
 res[res$result > reject, ]$res = "win"
 res[res$result < (-reject), ]$res = "loss"
 res[res$result <= reject & res$result >= -reject, ]$res = "draw"
+res$result = res$res
+res$res = NULL
+res$result = as.factor(res$result)
 
 playoffs2 = read.csv("data/playoffs.csv", header=TRUE, sep=",")
 playoffs2 = data.frame(playoffs$team, playoffs$opponent, playoffs2$result)
 names(playoffs2) = c("team", "opponent", "result")
+
 playoffs2$pred = NA
 for(i in 1:length(playoffs2$team)) {
     match = playoffs2[i,]
@@ -69,7 +73,11 @@ for(i in 1:length(playoffs2$team)) {
     opponent = as.character(match$opponent)
     index1 = (res$team == team & res$opponent == opponent)
     index2 = (playoffs2$team == team & playoffs2$opponent == opponent)
-    playoffs2[index2, ]$pred = res[index1, ]$res
+    playoffs2[index2, ]$pred = as.character(res[index1, ]$result)
 }
+playoffs2$pred = as.factor(playoffs2$pred)
 
-sum(playoffs2$result == playoffs2$pred)/length(playoffs2$team)
+# take only the validation data
+playoffs2 = playoffs2[valid_indices,]
+
+sum(playoffs2$result != playoffs2$pred)/length(playoffs2$team)
