@@ -35,8 +35,7 @@ playoffs$population_opponent = NULL
 
 # remove some atributes to simplify for now
 # those will not be removed in the final model
-playoffs$team = NULL
-playoffs$opponent = NULL
+
 playoffs$phase = NULL
 playoffs$stage = NULL
 playoffs$goals = NULL
@@ -84,5 +83,7 @@ for (i in 1:length(scores[["Team"]])) {
     }
   }
 }
+playoffs$team = NULL
+playoffs$opponent = NULL
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 
