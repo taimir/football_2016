@@ -1,0 +1,766 @@
+season,matchday,match,home,guest,homegoals,guestgoals
+2014/15,17,1,1. FSV Mainz 05,Bayern München,1,2
+2014/15,17,2,FC Schalke 04,Hamburger SV,0,0
+2014/15,17,3,Bayer 04 Leverkusen,Eintracht Frankfurt,1,1
+2014/15,17,4,FC Augsburg,Bor. Mönchengladbach,2,1
+2014/15,17,5,Werder Bremen,Borussia Dortmund,2,1
+2014/15,17,6,VfB Stuttgart,SC Paderborn 07,0,0
+2014/15,17,7,VfL Wolfsburg,1. FC Köln,2,1
+2014/15,17,8,Hertha BSC,TSG Hoffenheim,0,5
+2014/15,17,9,SC Freiburg,Hannover 96,2,2
+2014/15,16,1,Bayern München,SC Freiburg,2,0
+2014/15,16,2,Hannover 96,FC Augsburg,2,0
+2014/15,16,3,Hamburger SV,VfB Stuttgart,0,1
+2014/15,16,4,1. FC Köln,1. FSV Mainz 05,0,0
+2014/15,16,5,Borussia Dortmund,VfL Wolfsburg,2,2
+2014/15,16,6,Bor. Mönchengladbach,Werder Bremen,4,1
+2014/15,16,7,TSG Hoffenheim,Bayer 04 Leverkusen,0,1
+2014/15,16,8,Eintracht Frankfurt,Hertha BSC,4,4
+2014/15,16,9,SC Paderborn 07,FC Schalke 04,1,2
+2014/15,15,1,TSG Hoffenheim,Eintracht Frankfurt,3,2
+2014/15,15,2,FC Schalke 04,1. FC Köln,1,2
+2014/15,15,3,FC Augsburg,Bayern München,0,4
+2014/15,15,4,Hertha BSC,Borussia Dortmund,1,0
+2014/15,15,5,Werder Bremen,Hannover 96,3,3
+2014/15,15,6,SC Freiburg,Hamburger SV,0,0
+2014/15,15,7,1. FSV Mainz 05,VfB Stuttgart,1,1
+2014/15,15,8,Bayer 04 Leverkusen,Bor. Mönchengladbach,1,1
+2014/15,15,9,VfL Wolfsburg,SC Paderborn 07,1,1
+2014/15,14,1,Borussia Dortmund,TSG Hoffenheim,1,0
+2014/15,14,2,Bor. Mönchengladbach,Hertha BSC,3,2
+2014/15,14,3,Hannover 96,VfL Wolfsburg,1,3
+2014/15,14,4,VfB Stuttgart,FC Schalke 04,0,4
+2014/15,14,5,1. FC Köln,FC Augsburg,1,2
+2014/15,14,6,SC Paderborn 07,SC Freiburg,1,1
+2014/15,14,7,Bayern München,Bayer 04 Leverkusen,1,0
+2014/15,14,8,Hamburger SV,1. FSV Mainz 05,2,1
+2014/15,14,9,Eintracht Frankfurt,Werder Bremen,5,2
+2014/15,13,1,SC Freiburg,VfB Stuttgart,1,4
+2014/15,13,2,FC Schalke 04,1. FSV Mainz 05,4,1
+2014/15,13,3,Bayer 04 Leverkusen,1. FC Köln,5,1
+2014/15,13,4,FC Augsburg,Hamburger SV,3,1
+2014/15,13,5,Hertha BSC,Bayern München,0,1
+2014/15,13,6,Werder Bremen,SC Paderborn 07,4,0
+2014/15,13,7,TSG Hoffenheim,Hannover 96,4,3
+2014/15,13,8,VfL Wolfsburg,Bor. Mönchengladbach,1,0
+2014/15,13,9,Eintracht Frankfurt,Borussia Dortmund,2,0
+2014/15,12,1,Bayern München,TSG Hoffenheim,4,0
+2014/15,12,2,FC Schalke 04,VfL Wolfsburg,3,2
+2014/15,12,3,Bor. Mönchengladbach,Eintracht Frankfurt,1,3
+2014/15,12,4,1. FSV Mainz 05,SC Freiburg,2,2
+2014/15,12,5,Hannover 96,Bayer 04 Leverkusen,1,3
+2014/15,12,6,SC Paderborn 07,Borussia Dortmund,2,2
+2014/15,12,7,1. FC Köln,Hertha BSC,1,2
+2014/15,12,8,Hamburger SV,Werder Bremen,2,0
+2014/15,12,9,VfB Stuttgart,FC Augsburg,0,1
+2014/15,11,1,Hertha BSC,Hannover 96,0,2
+2014/15,11,2,Bayer 04 Leverkusen,1. FSV Mainz 05,0,0
+2014/15,11,3,FC Augsburg,SC Paderborn 07,3,0
+2014/15,11,4,TSG Hoffenheim,1. FC Köln,3,4
+2014/15,11,5,Eintracht Frankfurt,Bayern München,0,4
+2014/15,11,6,SC Freiburg,FC Schalke 04,2,0
+2014/15,11,7,Werder Bremen,VfB Stuttgart,2,0
+2014/15,11,8,VfL Wolfsburg,Hamburger SV,2,0
+2014/15,11,9,Borussia Dortmund,Bor. Mönchengladbach,1,0
+2014/15,10,1,FC Schalke 04,FC Augsburg,1,0
+2014/15,10,2,1. FSV Mainz 05,Werder Bremen,1,2
+2014/15,10,3,Hannover 96,Eintracht Frankfurt,1,0
+2014/15,10,4,VfB Stuttgart,VfL Wolfsburg,0,4
+2014/15,10,5,Hamburger SV,Bayer 04 Leverkusen,1,0
+2014/15,10,6,Bayern München,Borussia Dortmund,2,1
+2014/15,10,7,Bor. Mönchengladbach,TSG Hoffenheim,3,1
+2014/15,10,8,1. FC Köln,SC Freiburg,0,1
+2014/15,10,9,SC Paderborn 07,Hertha BSC,3,1
+2014/15,9,1,Werder Bremen,1. FC Köln,0,1
+2014/15,9,2,Borussia Dortmund,Hannover 96,0,1
+2014/15,9,3,FC Augsburg,SC Freiburg,2,0
+2014/15,9,4,TSG Hoffenheim,SC Paderborn 07,1,0
+2014/15,9,5,Hertha BSC,Hamburger SV,3,0
+2014/15,9,6,Eintracht Frankfurt,VfB Stuttgart,4,5
+2014/15,9,7,Bayer 04 Leverkusen,FC Schalke 04,1,0
+2014/15,9,8,VfL Wolfsburg,1. FSV Mainz 05,3,0
+2014/15,9,9,Bor. Mönchengladbach,Bayern München,0,0
+2014/15,8,1,Bayern München,Werder Bremen,6,0
+2014/15,8,2,1. FSV Mainz 05,FC Augsburg,2,1
+2014/15,8,3,Hannover 96,Bor. Mönchengladbach,0,3
+2014/15,8,4,SC Freiburg,VfL Wolfsburg,1,2
+2014/15,8,5,VfB Stuttgart,Bayer 04 Leverkusen,3,3
+2014/15,8,6,1. FC Köln,Borussia Dortmund,2,1
+2014/15,8,7,FC Schalke 04,Hertha BSC,2,0
+2014/15,8,8,Hamburger SV,TSG Hoffenheim,1,1
+2014/15,8,9,SC Paderborn 07,Eintracht Frankfurt,3,1
+2014/15,7,1,Hertha BSC,VfB Stuttgart,3,2
+2014/15,7,2,Bayern München,Hannover 96,4,0
+2014/15,7,3,Borussia Dortmund,Hamburger SV,0,1
+2014/15,7,4,Bayer 04 Leverkusen,SC Paderborn 07,2,2
+2014/15,7,5,TSG Hoffenheim,FC Schalke 04,2,1
+2014/15,7,6,Werder Bremen,SC Freiburg,1,1
+2014/15,7,7,Eintracht Frankfurt,1. FC Köln,3,2
+2014/15,7,8,VfL Wolfsburg,FC Augsburg,1,0
+2014/15,7,9,Bor. Mönchengladbach,1. FSV Mainz 05,1,1
+2014/15,6,1,1. FSV Mainz 05,TSG Hoffenheim,0,0
+2014/15,6,2,FC Schalke 04,Borussia Dortmund,2,1
+2014/15,6,3,SC Freiburg,Bayer 04 Leverkusen,0,0
+2014/15,6,4,VfB Stuttgart,Hannover 96,1,0
+2014/15,6,5,1. FC Köln,Bayern München,0,2
+2014/15,6,6,SC Paderborn 07,Bor. Mönchengladbach,1,2
+2014/15,6,7,VfL Wolfsburg,Werder Bremen,2,1
+2014/15,6,8,FC Augsburg,Hertha BSC,1,0
+2014/15,6,9,Hamburger SV,Eintracht Frankfurt,1,2
+2014/15,5,1,Bayern München,SC Paderborn 07,4,0
+2014/15,5,2,TSG Hoffenheim,SC Freiburg,3,3
+2014/15,5,3,Werder Bremen,FC Schalke 04,0,3
+2014/15,5,4,Eintracht Frankfurt,1. FSV Mainz 05,2,2
+2014/15,5,5,Borussia Dortmund,VfB Stuttgart,2,2
+2014/15,5,6,Bayer 04 Leverkusen,FC Augsburg,1,0
+2014/15,5,7,Bor. Mönchengladbach,Hamburger SV,1,0
+2014/15,5,8,Hannover 96,1. FC Köln,1,0
+2014/15,5,9,Hertha BSC,VfL Wolfsburg,1,0
+2014/15,4,1,SC Freiburg,Hertha BSC,2,2
+2014/15,4,2,FC Schalke 04,Eintracht Frankfurt,2,2
+2014/15,4,3,FC Augsburg,Werder Bremen,4,2
+2014/15,4,4,VfB Stuttgart,TSG Hoffenheim,0,2
+2014/15,4,5,Hamburger SV,Bayern München,0,0
+2014/15,4,6,SC Paderborn 07,Hannover 96,2,0
+2014/15,4,7,1. FSV Mainz 05,Borussia Dortmund,2,0
+2014/15,4,8,VfL Wolfsburg,Bayer 04 Leverkusen,4,1
+2014/15,4,9,1. FC Köln,Bor. Mönchengladbach,0,0
+2014/15,3,1,Bayer 04 Leverkusen,Werder Bremen,3,3
+2014/15,3,2,Bayern München,VfB Stuttgart,2,0
+2014/15,3,3,Borussia Dortmund,SC Freiburg,3,1
+2014/15,3,4,TSG Hoffenheim,VfL Wolfsburg,1,1
+2014/15,3,5,Hertha BSC,1. FSV Mainz 05,1,3
+2014/15,3,6,SC Paderborn 07,1. FC Köln,0,0
+2014/15,3,7,Bor. Mönchengladbach,FC Schalke 04,4,1
+2014/15,3,8,Eintracht Frankfurt,FC Augsburg,0,1
+2014/15,3,9,Hannover 96,Hamburger SV,2,0
+2014/15,2,1,FC Augsburg,Borussia Dortmund,2,3
+2014/15,2,2,Bayer 04 Leverkusen,Hertha BSC,4,2
+2014/15,2,3,VfL Wolfsburg,Eintracht Frankfurt,2,2
+2014/15,2,4,Werder Bremen,TSG Hoffenheim,1,1
+2014/15,2,5,VfB Stuttgart,1. FC Köln,0,2
+2014/15,2,6,Hamburger SV,SC Paderborn 07,0,3
+2014/15,2,7,FC Schalke 04,Bayern München,1,1
+2014/15,2,8,1. FSV Mainz 05,Hannover 96,0,0
+2014/15,2,9,SC Freiburg,Bor. Mönchengladbach,0,0
+2014/15,1,1,Bayern München,VfL Wolfsburg,2,1
+2014/15,1,2,TSG Hoffenheim,FC Augsburg,2,0
+2014/15,1,3,Hannover 96,FC Schalke 04,2,1
+2014/15,1,4,Hertha BSC,Werder Bremen,2,2
+2014/15,1,5,Eintracht Frankfurt,SC Freiburg,1,0
+2014/15,1,6,1. FC Köln,Hamburger SV,0,0
+2014/15,1,7,Borussia Dortmund,Bayer 04 Leverkusen,0,2
+2014/15,1,8,SC Paderborn 07,1. FSV Mainz 05,2,2
+2014/15,1,9,Bor. Mönchengladbach,VfB Stuttgart,1,1
+2013/14,34,1,Bayern München,VfB Stuttgart,1,0
+2013/14,34,2,FC Schalke 04,1. FC Nürnberg,4,1
+2013/14,34,3,Bayer 04 Leverkusen,Werder Bremen,2,1
+2013/14,34,4,Hannover 96,SC Freiburg,3,2
+2013/14,34,5,VfL Wolfsburg,Bor. Mönchengladbach,3,1
+2013/14,34,6,TSG Hoffenheim,Eintracht Braunschweig,3,1
+2013/14,34,7,1. FSV Mainz 05,Hamburger SV,3,2
+2013/14,34,8,FC Augsburg,Eintracht Frankfurt,2,1
+2013/14,34,9,Hertha BSC,Borussia Dortmund,0,4
+2013/14,33,1,Borussia Dortmund,TSG Hoffenheim,3,2
+2013/14,33,2,Bor. Mönchengladbach,1. FSV Mainz 05,3,1
+2013/14,33,3,VfB Stuttgart,VfL Wolfsburg,1,2
+2013/14,33,4,Werder Bremen,Hertha BSC,2,0
+2013/14,33,5,1. FC Nürnberg,Hannover 96,0,2
+2013/14,33,6,SC Freiburg,FC Schalke 04,0,2
+2013/14,33,7,Hamburger SV,Bayern München,1,4
+2013/14,33,8,Eintracht Braunschweig,FC Augsburg,0,1
+2013/14,33,9,Eintracht Frankfurt,Bayer 04 Leverkusen,0,2
+2013/14,32,1,Hannover 96,VfB Stuttgart,0,0
+2013/14,32,2,Bayern München,Werder Bremen,5,2
+2013/14,32,3,VfL Wolfsburg,SC Freiburg,2,2
+2013/14,32,4,TSG Hoffenheim,Eintracht Frankfurt,0,0
+2013/14,32,5,1. FSV Mainz 05,1. FC Nürnberg,2,0
+2013/14,32,6,Hertha BSC,Eintracht Braunschweig,2,0
+2013/14,32,7,Bayer 04 Leverkusen,Borussia Dortmund,2,2
+2013/14,32,8,FC Augsburg,Hamburger SV,3,1
+2013/14,32,9,FC Schalke 04,Bor. Mönchengladbach,0,1
+2013/14,31,1,Eintracht Frankfurt,Hannover 96,2,3
+2013/14,31,2,Borussia Dortmund,1. FSV Mainz 05,4,2
+2013/14,31,3,Werder Bremen,TSG Hoffenheim,3,1
+2013/14,31,4,SC Freiburg,Bor. Mönchengladbach,4,2
+2013/14,31,5,FC Augsburg,Hertha BSC,0,0
+2013/14,31,6,Eintracht Braunschweig,Bayern München,0,2
+2013/14,31,7,Hamburger SV,VfL Wolfsburg,1,3
+2013/14,31,8,1. FC Nürnberg,Bayer 04 Leverkusen,1,4
+2013/14,31,9,VfB Stuttgart,FC Schalke 04,3,1
+2013/14,30,1,FC Schalke 04,Eintracht Frankfurt,2,0
+2013/14,30,2,Bor. Mönchengladbach,VfB Stuttgart,1,1
+2013/14,30,3,Hannover 96,Hamburger SV,2,1
+2013/14,30,4,VfL Wolfsburg,1. FC Nürnberg,4,1
+2013/14,30,5,SC Freiburg,Eintracht Braunschweig,2,0
+2013/14,30,6,1. FSV Mainz 05,Werder Bremen,3,0
+2013/14,30,7,Bayern München,Borussia Dortmund,0,3
+2013/14,30,8,Bayer 04 Leverkusen,Hertha BSC,2,1
+2013/14,30,9,TSG Hoffenheim,FC Augsburg,2,0
+2013/14,29,1,Hamburger SV,Bayer 04 Leverkusen,2,1
+2013/14,29,2,VfB Stuttgart,SC Freiburg,2,0
+2013/14,29,3,Werder Bremen,FC Schalke 04,1,1
+2013/14,29,4,1. FC Nürnberg,Bor. Mönchengladbach,0,2
+2013/14,29,5,FC Augsburg,Bayern München,1,0
+2013/14,29,6,Eintracht Frankfurt,1. FSV Mainz 05,2,0
+2013/14,29,7,Borussia Dortmund,VfL Wolfsburg,2,1
+2013/14,29,8,Eintracht Braunschweig,Hannover 96,3,0
+2013/14,29,9,Hertha BSC,TSG Hoffenheim,1,1
+2013/14,28,1,FC Schalke 04,Hertha BSC,2,0
+2013/14,28,2,Bayern München,TSG Hoffenheim,3,3
+2013/14,28,3,Bayer 04 Leverkusen,Eintracht Braunschweig,1,1
+2013/14,28,4,VfB Stuttgart,Borussia Dortmund,2,3
+2013/14,28,5,VfL Wolfsburg,Eintracht Frankfurt,2,1
+2013/14,28,6,1. FSV Mainz 05,FC Augsburg,3,0
+2013/14,28,7,SC Freiburg,1. FC Nürnberg,3,2
+2013/14,28,8,Bor. Mönchengladbach,Hamburger SV,3,1
+2013/14,28,9,Hannover 96,Werder Bremen,1,2
+2013/14,27,1,Borussia Dortmund,FC Schalke 04,0,0
+2013/14,27,2,Werder Bremen,VfL Wolfsburg,1,3
+2013/14,27,3,Eintracht Braunschweig,1. FSV Mainz 05,3,1
+2013/14,27,4,Hertha BSC,Bayern München,1,3
+2013/14,27,5,1. FC Nürnberg,VfB Stuttgart,2,0
+2013/14,27,6,TSG Hoffenheim,Hannover 96,3,1
+2013/14,27,7,FC Augsburg,Bayer 04 Leverkusen,1,3
+2013/14,27,8,Hamburger SV,SC Freiburg,1,1
+2013/14,27,9,Eintracht Frankfurt,Bor. Mönchengladbach,1,0
+2013/14,26,1,SC Freiburg,Werder Bremen,3,1
+2013/14,26,2,FC Schalke 04,Eintracht Braunschweig,3,1
+2013/14,26,3,VfB Stuttgart,Hamburger SV,1,0
+2013/14,26,4,Hannover 96,Borussia Dortmund,0,3
+2013/14,26,5,VfL Wolfsburg,FC Augsburg,1,1
+2013/14,26,6,1. FSV Mainz 05,Bayern München,0,2
+2013/14,26,7,Bor. Mönchengladbach,Hertha BSC,3,0
+2013/14,26,8,1. FC Nürnberg,Eintracht Frankfurt,2,5
+2013/14,26,9,Bayer 04 Leverkusen,TSG Hoffenheim,2,3
+2013/14,25,1,FC Augsburg,FC Schalke 04,1,2
+2013/14,25,2,Borussia Dortmund,Bor. Mönchengladbach,1,2
+2013/14,25,3,Werder Bremen,VfB Stuttgart,1,1
+2013/14,25,4,TSG Hoffenheim,1. FSV Mainz 05,2,4
+2013/14,25,5,Eintracht Braunschweig,VfL Wolfsburg,1,1
+2013/14,25,6,Hertha BSC,Hannover 96,0,3
+2013/14,25,7,Bayern München,Bayer 04 Leverkusen,2,1
+2013/14,25,8,Hamburger SV,1. FC Nürnberg,2,1
+2013/14,25,9,Eintracht Frankfurt,SC Freiburg,1,4
+2013/14,24,1,FC Schalke 04,TSG Hoffenheim,4,0
+2013/14,24,2,Bor. Mönchengladbach,FC Augsburg,1,2
+2013/14,24,3,VfB Stuttgart,Eintracht Braunschweig,2,2
+2013/14,24,4,Hannover 96,Bayer 04 Leverkusen,1,1
+2013/14,24,5,VfL Wolfsburg,Bayern München,1,6
+2013/14,24,6,Hamburger SV,Eintracht Frankfurt,1,1
+2013/14,24,7,1. FC Nürnberg,Werder Bremen,0,2
+2013/14,24,8,SC Freiburg,Borussia Dortmund,0,1
+2013/14,24,9,1. FSV Mainz 05,Hertha BSC,1,1
+2013/14,23,1,Hertha BSC,SC Freiburg,0,0
+2013/14,23,2,Borussia Dortmund,1. FC Nürnberg,3,0
+2013/14,23,3,Bayer 04 Leverkusen,1. FSV Mainz 05,0,1
+2013/14,23,4,Werder Bremen,Hamburger SV,1,0
+2013/14,23,5,FC Augsburg,Hannover 96,1,1
+2013/14,23,6,Eintracht Braunschweig,Bor. Mönchengladbach,1,1
+2013/14,23,7,Bayern München,FC Schalke 04,5,1
+2013/14,23,8,TSG Hoffenheim,VfL Wolfsburg,6,2
+2013/14,23,9,Eintracht Frankfurt,VfB Stuttgart,2,1
+2013/14,22,1,FC Schalke 04,1. FSV Mainz 05,0,0
+2013/14,22,2,Bor. Mönchengladbach,TSG Hoffenheim,2,2
+2013/14,22,3,VfB Stuttgart,Hertha BSC,1,2
+2013/14,22,4,1. FC Nürnberg,Eintracht Braunschweig,2,1
+2013/14,22,5,SC Freiburg,FC Augsburg,2,4
+2013/14,22,6,Hamburger SV,Borussia Dortmund,3,0
+2013/14,22,7,VfL Wolfsburg,Bayer 04 Leverkusen,3,1
+2013/14,22,8,Eintracht Frankfurt,Werder Bremen,0,0
+2013/14,22,9,Hannover 96,Bayern München,0,4
+2013/14,21,1,1. FSV Mainz 05,Hannover 96,2,0
+2013/14,21,2,Borussia Dortmund,Eintracht Frankfurt,4,0
+2013/14,21,3,Bayern München,SC Freiburg,4,0
+2013/14,21,4,Werder Bremen,Bor. Mönchengladbach,1,1
+2013/14,21,5,TSG Hoffenheim,VfB Stuttgart,4,1
+2013/14,21,6,Eintracht Braunschweig,Hamburger SV,4,2
+2013/14,21,7,Bayer 04 Leverkusen,FC Schalke 04,1,2
+2013/14,21,8,FC Augsburg,1. FC Nürnberg,0,1
+2013/14,21,9,Hertha BSC,VfL Wolfsburg,1,2
+2013/14,20,1,Bor. Mönchengladbach,Bayer 04 Leverkusen,0,1
+2013/14,20,2,VfL Wolfsburg,1. FSV Mainz 05,3,0
+2013/14,20,3,Werder Bremen,Borussia Dortmund,1,5
+2013/14,20,4,1. FC Nürnberg,Bayern München,0,2
+2013/14,20,5,SC Freiburg,TSG Hoffenheim,1,1
+2013/14,20,6,Eintracht Frankfurt,Eintracht Braunschweig,3,0
+2013/14,20,7,Hamburger SV,Hertha BSC,0,3
+2013/14,20,8,VfB Stuttgart,FC Augsburg,1,4
+2013/14,20,9,FC Schalke 04,Hannover 96,2,0
+2013/14,19,1,Eintracht Braunschweig,Borussia Dortmund,1,2
+2013/14,19,2,FC Schalke 04,VfL Wolfsburg,2,1
+2013/14,19,3,Bayer 04 Leverkusen,VfB Stuttgart,2,1
+2013/14,19,4,TSG Hoffenheim,Hamburger SV,3,0
+2013/14,19,5,1. FSV Mainz 05,SC Freiburg,2,0
+2013/14,19,6,FC Augsburg,Werder Bremen,3,1
+2013/14,19,7,Hannover 96,Bor. Mönchengladbach,3,1
+2013/14,19,8,Hertha BSC,1. FC Nürnberg,1,3
+2013/14,19,9,Bayern München,Eintracht Frankfurt,5,0
+2013/14,18,1,Bor. Mönchengladbach,Bayern München,0,2
+2013/14,18,2,Borussia Dortmund,FC Augsburg,2,2
+2013/14,18,3,VfB Stuttgart,1. FSV Mainz 05,1,2
+2013/14,18,4,VfL Wolfsburg,Hannover 96,1,3
+2013/14,18,5,1. FC Nürnberg,TSG Hoffenheim,4,0
+2013/14,18,6,SC Freiburg,Bayer 04 Leverkusen,3,2
+2013/14,18,7,Eintracht Frankfurt,Hertha BSC,1,0
+2013/14,18,8,Werder Bremen,Eintracht Braunschweig,0,0
+2013/14,18,9,Hamburger SV,FC Schalke 04,0,3
+2013/14,17,1,Eintracht Frankfurt,FC Augsburg,1,1
+2013/14,17,2,Borussia Dortmund,Hertha BSC,1,2
+2013/14,17,3,Werder Bremen,Bayer 04 Leverkusen,1,0
+2013/14,17,4,SC Freiburg,Hannover 96,2,1
+2013/14,17,5,Hamburger SV,1. FSV Mainz 05,2,3
+2013/14,17,6,Eintracht Braunschweig,TSG Hoffenheim,1,0
+2013/14,17,7,1. FC Nürnberg,FC Schalke 04,0,0
+2013/14,17,8,Bor. Mönchengladbach,VfL Wolfsburg,2,2
+2013/14,17,9,VfB Stuttgart,Bayern München,1,2
+2013/14,16,1,Hertha BSC,Werder Bremen,3,2
+2013/14,16,2,Bayern München,Hamburger SV,3,1
+2013/14,16,3,Hannover 96,1. FC Nürnberg,3,3
+2013/14,16,4,TSG Hoffenheim,Borussia Dortmund,2,2
+2013/14,16,5,1. FSV Mainz 05,Bor. Mönchengladbach,0,0
+2013/14,16,6,FC Augsburg,Eintracht Braunschweig,4,1
+2013/14,16,7,VfL Wolfsburg,VfB Stuttgart,3,1
+2013/14,16,8,FC Schalke 04,SC Freiburg,2,0
+2013/14,16,9,Bayer 04 Leverkusen,Eintracht Frankfurt,0,1
+2013/14,15,1,1. FC Nürnberg,1. FSV Mainz 05,1,1
+2013/14,15,2,Bor. Mönchengladbach,FC Schalke 04,2,1
+2013/14,15,3,VfB Stuttgart,Hannover 96,4,2
+2013/14,15,4,Werder Bremen,Bayern München,0,7
+2013/14,15,5,Hamburger SV,FC Augsburg,0,1
+2013/14,15,6,Eintracht Frankfurt,TSG Hoffenheim,1,2
+2013/14,15,7,Borussia Dortmund,Bayer 04 Leverkusen,0,1
+2013/14,15,8,SC Freiburg,VfL Wolfsburg,0,3
+2013/14,15,9,Eintracht Braunschweig,Hertha BSC,0,2
+2013/14,14,1,VfL Wolfsburg,Hamburger SV,1,1
+2013/14,14,2,Bayern München,Eintracht Braunschweig,2,0
+2013/14,14,3,Bayer 04 Leverkusen,1. FC Nürnberg,3,0
+2013/14,14,4,TSG Hoffenheim,Werder Bremen,4,4
+2013/14,14,5,1. FSV Mainz 05,Borussia Dortmund,1,3
+2013/14,14,6,Hertha BSC,FC Augsburg,0,0
+2013/14,14,7,FC Schalke 04,VfB Stuttgart,3,0
+2013/14,14,8,Hannover 96,Eintracht Frankfurt,2,0
+2013/14,14,9,Bor. Mönchengladbach,SC Freiburg,1,0
+2013/14,13,1,VfB Stuttgart,Bor. Mönchengladbach,0,2
+2013/14,13,2,1. FC Nürnberg,VfL Wolfsburg,1,1
+2013/14,13,3,FC Augsburg,TSG Hoffenheim,2,0
+2013/14,13,4,Eintracht Braunschweig,SC Freiburg,0,1
+2013/14,13,5,Eintracht Frankfurt,FC Schalke 04,3,3
+2013/14,13,6,Hertha BSC,Bayer 04 Leverkusen,0,1
+2013/14,13,7,Borussia Dortmund,Bayern München,0,3
+2013/14,13,8,Hamburger SV,Hannover 96,3,1
+2013/14,13,9,Werder Bremen,1. FSV Mainz 05,2,3
+2013/14,12,1,Hannover 96,Eintracht Braunschweig,0,0
+2013/14,12,2,Bayern München,FC Augsburg,3,0
+2013/14,12,3,FC Schalke 04,Werder Bremen,3,1
+2013/14,12,4,Bayer 04 Leverkusen,Hamburger SV,5,3
+2013/14,12,5,VfL Wolfsburg,Borussia Dortmund,2,1
+2013/14,12,6,TSG Hoffenheim,Hertha BSC,2,3
+2013/14,12,7,Bor. Mönchengladbach,1. FC Nürnberg,3,1
+2013/14,12,8,1. FSV Mainz 05,Eintracht Frankfurt,1,0
+2013/14,12,9,SC Freiburg,VfB Stuttgart,1,3
+2013/14,11,1,Borussia Dortmund,VfB Stuttgart,6,1
+2013/14,11,2,1. FC Nürnberg,SC Freiburg,0,3
+2013/14,11,3,TSG Hoffenheim,Bayern München,1,2
+2013/14,11,4,Hamburger SV,Bor. Mönchengladbach,0,2
+2013/14,11,5,Eintracht Braunschweig,Bayer 04 Leverkusen,1,0
+2013/14,11,6,Hertha BSC,FC Schalke 04,0,2
+2013/14,11,7,Eintracht Frankfurt,VfL Wolfsburg,1,2
+2013/14,11,8,FC Augsburg,1. FSV Mainz 05,2,1
+2013/14,11,9,Werder Bremen,Hannover 96,3,2
+2013/14,10,1,VfB Stuttgart,1. FC Nürnberg,1,1
+2013/14,10,2,Bayern München,Hertha BSC,3,2
+2013/14,10,3,FC Schalke 04,Borussia Dortmund,1,3
+2013/14,10,4,Bayer 04 Leverkusen,FC Augsburg,2,1
+2013/14,10,5,Hannover 96,TSG Hoffenheim,1,4
+2013/14,10,6,1. FSV Mainz 05,Eintracht Braunschweig,2,0
+2013/14,10,7,VfL Wolfsburg,Werder Bremen,3,0
+2013/14,10,8,SC Freiburg,Hamburger SV,0,3
+2013/14,10,9,Bor. Mönchengladbach,Eintracht Frankfurt,4,1
+2013/14,9,1,TSG Hoffenheim,Bayer 04 Leverkusen,1,2
+2013/14,9,2,Borussia Dortmund,Hannover 96,1,0
+2013/14,9,3,Bayern München,1. FSV Mainz 05,4,1
+2013/14,9,4,Werder Bremen,SC Freiburg,0,0
+2013/14,9,5,Eintracht Braunschweig,FC Schalke 04,2,3
+2013/14,9,6,Eintracht Frankfurt,1. FC Nürnberg,1,1
+2013/14,9,7,Hertha BSC,Bor. Mönchengladbach,1,0
+2013/14,9,8,Hamburger SV,VfB Stuttgart,3,3
+2013/14,9,9,FC Augsburg,VfL Wolfsburg,1,2
+2013/14,8,1,Hannover 96,Hertha BSC,1,1
+2013/14,8,2,FC Schalke 04,FC Augsburg,4,1
+2013/14,8,3,Bor. Mönchengladbach,Borussia Dortmund,2,0
+2013/14,8,4,VfB Stuttgart,Werder Bremen,1,1
+2013/14,8,5,VfL Wolfsburg,Eintracht Braunschweig,0,2
+2013/14,8,6,1. FSV Mainz 05,TSG Hoffenheim,2,2
+2013/14,8,7,Bayer 04 Leverkusen,Bayern München,1,1
+2013/14,8,8,1. FC Nürnberg,Hamburger SV,0,5
+2013/14,8,9,SC Freiburg,Eintracht Frankfurt,1,1
+2013/14,7,1,FC Augsburg,Bor. Mönchengladbach,2,2
+2013/14,7,2,Borussia Dortmund,SC Freiburg,5,0
+2013/14,7,3,Bayern München,VfL Wolfsburg,1,0
+2013/14,7,4,Bayer 04 Leverkusen,Hannover 96,2,0
+2013/14,7,5,TSG Hoffenheim,FC Schalke 04,3,3
+2013/14,7,6,Hertha BSC,1. FSV Mainz 05,3,1
+2013/14,7,7,Eintracht Frankfurt,Hamburger SV,2,2
+2013/14,7,8,Werder Bremen,1. FC Nürnberg,3,3
+2013/14,7,9,Eintracht Braunschweig,VfB Stuttgart,0,4
+2013/14,6,1,Bor. Mönchengladbach,Eintracht Braunschweig,4,1
+2013/14,6,2,Hannover 96,FC Augsburg,2,1
+2013/14,6,3,VfL Wolfsburg,TSG Hoffenheim,2,1
+2013/14,6,4,1. FC Nürnberg,Borussia Dortmund,1,1
+2013/14,6,5,1. FSV Mainz 05,Bayer 04 Leverkusen,1,4
+2013/14,6,6,Hamburger SV,Werder Bremen,0,2
+2013/14,6,7,FC Schalke 04,Bayern München,0,4
+2013/14,6,8,SC Freiburg,Hertha BSC,1,1
+2013/14,6,9,VfB Stuttgart,Eintracht Frankfurt,1,1
+2013/14,5,1,Hertha BSC,VfB Stuttgart,0,1
+2013/14,5,2,Bayern München,Hannover 96,2,0
+2013/14,5,3,Bayer 04 Leverkusen,VfL Wolfsburg,3,1
+2013/14,5,4,Werder Bremen,Eintracht Frankfurt,0,3
+2013/14,5,5,1. FSV Mainz 05,FC Schalke 04,0,1
+2013/14,5,6,FC Augsburg,SC Freiburg,2,1
+2013/14,5,7,Borussia Dortmund,Hamburger SV,6,2
+2013/14,5,8,TSG Hoffenheim,Bor. Mönchengladbach,2,1
+2013/14,5,9,Eintracht Braunschweig,1. FC Nürnberg,1,1
+2013/14,4,1,SC Freiburg,Bayern München,1,1
+2013/14,4,2,Bor. Mönchengladbach,Werder Bremen,4,1
+2013/14,4,3,Hannover 96,1. FSV Mainz 05,4,1
+2013/14,4,4,VfL Wolfsburg,Hertha BSC,2,0
+2013/14,4,5,1. FC Nürnberg,FC Augsburg,0,1
+2013/14,4,6,Hamburger SV,Eintracht Braunschweig,4,0
+2013/14,4,7,FC Schalke 04,Bayer 04 Leverkusen,2,0
+2013/14,4,8,VfB Stuttgart,TSG Hoffenheim,6,2
+2013/14,4,9,Eintracht Frankfurt,Borussia Dortmund,1,2
+2013/14,3,1,Borussia Dortmund,Werder Bremen,1,0
+2013/14,3,2,Bayern München,1. FC Nürnberg,2,0
+2013/14,3,3,Bayer 04 Leverkusen,Bor. Mönchengladbach,4,2
+2013/14,3,4,Hannover 96,FC Schalke 04,2,1
+2013/14,3,5,TSG Hoffenheim,SC Freiburg,3,3
+2013/14,3,6,1. FSV Mainz 05,VfL Wolfsburg,2,0
+2013/14,3,7,Hertha BSC,Hamburger SV,1,0
+2013/14,3,8,Eintracht Braunschweig,Eintracht Frankfurt,0,2
+2013/14,3,9,FC Augsburg,VfB Stuttgart,2,1
+2013/14,2,1,VfB Stuttgart,Bayer 04 Leverkusen,0,1
+2013/14,2,2,VfL Wolfsburg,FC Schalke 04,4,0
+2013/14,2,3,Werder Bremen,FC Augsburg,1,0
+2013/14,2,4,SC Freiburg,1. FSV Mainz 05,1,2
+2013/14,2,5,Hamburger SV,TSG Hoffenheim,1,5
+2013/14,2,6,Eintracht Frankfurt,Bayern München,0,1
+2013/14,2,7,Bor. Mönchengladbach,Hannover 96,3,0
+2013/14,2,8,1. FC Nürnberg,Hertha BSC,2,2
+2013/14,2,9,Borussia Dortmund,Eintracht Braunschweig,2,1
+2013/14,1,1,Bayern München,Bor. Mönchengladbach,3,1
+2013/14,1,2,TSG Hoffenheim,1. FC Nürnberg,2,2
+2013/14,1,3,Bayer 04 Leverkusen,SC Freiburg,3,1
+2013/14,1,4,Hannover 96,VfL Wolfsburg,2,0
+2013/14,1,5,FC Augsburg,Borussia Dortmund,0,4
+2013/14,1,6,Hertha BSC,Eintracht Frankfurt,6,1
+2013/14,1,7,Eintracht Braunschweig,Werder Bremen,0,1
+2013/14,1,8,1. FSV Mainz 05,VfB Stuttgart,3,2
+2013/14,1,9,FC Schalke 04,Hamburger SV,3,3
+2012/13,34,1,Borussia Dortmund,TSG Hoffenheim,1,2
+2012/13,34,2,Bor. Mönchengladbach,Bayern München,3,4
+2012/13,34,3,VfB Stuttgart,1. FSV Mainz 05,2,2
+2012/13,34,4,Hannover 96,Fortuna Düsseldorf,3,0
+2012/13,34,5,1. FC Nürnberg,Werder Bremen,3,2
+2012/13,34,6,SC Freiburg,FC Schalke 04,1,2
+2012/13,34,7,FC Augsburg,SpVgg Greuther Fürth,3,1
+2012/13,34,8,Hamburger SV,Bayer 04 Leverkusen,0,1
+2012/13,34,9,Eintracht Frankfurt,VfL Wolfsburg,2,2
+2012/13,33,1,Bayern München,FC Augsburg,3,0
+2012/13,33,2,FC Schalke 04,VfB Stuttgart,1,2
+2012/13,33,3,Bayer 04 Leverkusen,Hannover 96,3,1
+2012/13,33,4,VfL Wolfsburg,Borussia Dortmund,3,3
+2012/13,33,5,Werder Bremen,Eintracht Frankfurt,1,1
+2012/13,33,6,TSG Hoffenheim,Hamburger SV,1,4
+2012/13,33,7,1. FSV Mainz 05,Bor. Mönchengladbach,2,4
+2012/13,33,8,SpVgg Greuther Fürth,SC Freiburg,1,2
+2012/13,33,9,Fortuna Düsseldorf,1. FC Nürnberg,1,2
+2012/13,32,1,Bor. Mönchengladbach,FC Schalke 04,0,1
+2012/13,32,2,VfB Stuttgart,SpVgg Greuther Fürth,0,2
+2012/13,32,3,Hannover 96,1. FSV Mainz 05,2,2
+2012/13,32,4,Werder Bremen,TSG Hoffenheim,2,2
+2012/13,32,5,1. FC Nürnberg,Bayer 04 Leverkusen,0,2
+2012/13,32,6,Eintracht Frankfurt,Fortuna Düsseldorf,3,1
+2012/13,32,7,Borussia Dortmund,Bayern München,1,1
+2012/13,32,8,SC Freiburg,FC Augsburg,2,0
+2012/13,32,9,Hamburger SV,VfL Wolfsburg,1,1
+2012/13,31,1,SpVgg Greuther Fürth,Hannover 96,2,3
+2012/13,31,2,Bayern München,SC Freiburg,1,0
+2012/13,31,3,Bayer 04 Leverkusen,Werder Bremen,1,0
+2012/13,31,4,VfL Wolfsburg,Bor. Mönchengladbach,3,1
+2012/13,31,5,TSG Hoffenheim,1. FC Nürnberg,2,1
+2012/13,31,6,FC Augsburg,VfB Stuttgart,3,0
+2012/13,31,7,Fortuna Düsseldorf,Borussia Dortmund,1,2
+2012/13,31,8,1. FSV Mainz 05,Eintracht Frankfurt,0,0
+2012/13,31,9,FC Schalke 04,Hamburger SV,4,1
+2012/13,30,1,Bor. Mönchengladbach,FC Augsburg,1,0
+2012/13,30,2,Borussia Dortmund,1. FSV Mainz 05,2,0
+2012/13,30,3,Bayer 04 Leverkusen,TSG Hoffenheim,5,0
+2012/13,30,4,Hannover 96,Bayern München,1,6
+2012/13,30,5,Hamburger SV,Fortuna Düsseldorf,2,1
+2012/13,30,6,Eintracht Frankfurt,FC Schalke 04,1,0
+2012/13,30,7,Werder Bremen,VfL Wolfsburg,0,3
+2012/13,30,8,VfB Stuttgart,SC Freiburg,2,1
+2012/13,30,9,1. FC Nürnberg,SpVgg Greuther Fürth,0,1
+2012/13,29,1,SC Freiburg,Hannover 96,3,1
+2012/13,29,2,Bayern München,1. FC Nürnberg,4,0
+2012/13,29,3,VfL Wolfsburg,TSG Hoffenheim,2,2
+2012/13,29,4,1. FSV Mainz 05,Hamburger SV,1,2
+2012/13,29,5,SpVgg Greuther Fürth,Borussia Dortmund,1,6
+2012/13,29,6,Fortuna Düsseldorf,Werder Bremen,2,2
+2012/13,29,7,FC Schalke 04,Bayer 04 Leverkusen,2,2
+2012/13,29,8,VfB Stuttgart,Bor. Mönchengladbach,2,0
+2012/13,29,9,FC Augsburg,Eintracht Frankfurt,2,0
+2012/13,28,1,TSG Hoffenheim,Fortuna Düsseldorf,3,0
+2012/13,28,2,Borussia Dortmund,FC Augsburg,4,2
+2012/13,28,3,Bor. Mönchengladbach,SpVgg Greuther Fürth,1,0
+2012/13,28,4,Bayer 04 Leverkusen,VfL Wolfsburg,1,1
+2012/13,28,5,Werder Bremen,FC Schalke 04,0,2
+2012/13,28,6,Eintracht Frankfurt,Bayern München,0,1
+2012/13,28,7,Hamburger SV,SC Freiburg,0,1
+2012/13,28,8,1. FC Nürnberg,1. FSV Mainz 05,2,1
+2012/13,28,9,Hannover 96,VfB Stuttgart,0,0
+2012/13,27,1,FC Schalke 04,TSG Hoffenheim,3,0
+2012/13,27,2,VfB Stuttgart,Borussia Dortmund,1,2
+2012/13,27,3,SC Freiburg,Bor. Mönchengladbach,2,0
+2012/13,27,4,1. FSV Mainz 05,Werder Bremen,1,1
+2012/13,27,5,FC Augsburg,Hannover 96,0,2
+2012/13,27,6,Fortuna Düsseldorf,Bayer 04 Leverkusen,1,4
+2012/13,27,7,Bayern München,Hamburger SV,9,2
+2012/13,27,8,VfL Wolfsburg,1. FC Nürnberg,2,2
+2012/13,27,9,SpVgg Greuther Fürth,Eintracht Frankfurt,2,3
+2012/13,26,1,VfL Wolfsburg,Fortuna Düsseldorf,1,1
+2012/13,26,2,Borussia Dortmund,SC Freiburg,5,1
+2012/13,26,3,Werder Bremen,SpVgg Greuther Fürth,2,2
+2012/13,26,4,1. FC Nürnberg,FC Schalke 04,3,0
+2012/13,26,5,TSG Hoffenheim,1. FSV Mainz 05,0,0
+2012/13,26,6,Hamburger SV,FC Augsburg,0,1
+2012/13,26,7,Bayer 04 Leverkusen,Bayern München,1,2
+2012/13,26,8,Eintracht Frankfurt,VfB Stuttgart,1,2
+2012/13,26,9,Bor. Mönchengladbach,Hannover 96,1,0
+2012/13,25,1,FC Augsburg,1. FC Nürnberg,1,2
+2012/13,25,2,Bayern München,Fortuna Düsseldorf,3,2
+2012/13,25,3,FC Schalke 04,Borussia Dortmund,2,1
+2012/13,25,4,SC Freiburg,VfL Wolfsburg,2,5
+2012/13,25,5,1. FSV Mainz 05,Bayer 04 Leverkusen,1,0
+2012/13,25,6,SpVgg Greuther Fürth,TSG Hoffenheim,0,3
+2012/13,25,7,Bor. Mönchengladbach,Werder Bremen,1,1
+2012/13,25,8,Hannover 96,Eintracht Frankfurt,0,0
+2012/13,25,9,VfB Stuttgart,Hamburger SV,0,1
+2012/13,24,1,Eintracht Frankfurt,Bor. Mönchengladbach,0,1
+2012/13,24,2,Borussia Dortmund,Hannover 96,3,1
+2012/13,24,3,VfL Wolfsburg,FC Schalke 04,1,4
+2012/13,24,4,Werder Bremen,FC Augsburg,0,1
+2012/13,24,5,1. FC Nürnberg,SC Freiburg,1,1
+2012/13,24,6,Hamburger SV,SpVgg Greuther Fürth,1,1
+2012/13,24,7,Bayer 04 Leverkusen,VfB Stuttgart,2,1
+2012/13,24,8,TSG Hoffenheim,Bayern München,0,1
+2012/13,24,9,Fortuna Düsseldorf,1. FSV Mainz 05,1,1
+2012/13,23,1,SC Freiburg,Eintracht Frankfurt,0,0
+2012/13,23,2,Bayern München,Werder Bremen,6,1
+2012/13,23,3,VfB Stuttgart,1. FC Nürnberg,1,1
+2012/13,23,4,Hannover 96,Hamburger SV,5,1
+2012/13,23,5,1. FSV Mainz 05,VfL Wolfsburg,1,1
+2012/13,23,6,FC Augsburg,TSG Hoffenheim,2,1
+2012/13,23,7,FC Schalke 04,Fortuna Düsseldorf,2,1
+2012/13,23,8,Bor. Mönchengladbach,Borussia Dortmund,1,1
+2012/13,23,9,SpVgg Greuther Fürth,Bayer 04 Leverkusen,0,0
+2012/13,22,1,VfL Wolfsburg,Bayern München,0,2
+2012/13,22,2,Bayer 04 Leverkusen,FC Augsburg,2,1
+2012/13,22,3,Werder Bremen,SC Freiburg,2,3
+2012/13,22,4,1. FSV Mainz 05,FC Schalke 04,2,2
+2012/13,22,5,Hamburger SV,Bor. Mönchengladbach,1,0
+2012/13,22,6,Fortuna Düsseldorf,SpVgg Greuther Fürth,1,0
+2012/13,22,7,Borussia Dortmund,Eintracht Frankfurt,3,0
+2012/13,22,8,1. FC Nürnberg,Hannover 96,2,2
+2012/13,22,9,TSG Hoffenheim,VfB Stuttgart,0,1
+2012/13,21,1,Borussia Dortmund,Hamburger SV,1,4
+2012/13,21,2,Bor. Mönchengladbach,Bayer 04 Leverkusen,3,3
+2012/13,21,3,VfB Stuttgart,Werder Bremen,1,4
+2012/13,21,4,Hannover 96,TSG Hoffenheim,1,0
+2012/13,21,5,SpVgg Greuther Fürth,VfL Wolfsburg,0,1
+2012/13,21,6,Eintracht Frankfurt,1. FC Nürnberg,0,0
+2012/13,21,7,Bayern München,FC Schalke 04,4,0
+2012/13,21,8,FC Augsburg,1. FSV Mainz 05,1,1
+2012/13,21,9,SC Freiburg,Fortuna Düsseldorf,1,0
+2012/13,20,1,Werder Bremen,Hannover 96,2,0
+2012/13,20,2,FC Schalke 04,SpVgg Greuther Fürth,1,2
+2012/13,20,3,VfL Wolfsburg,FC Augsburg,1,1
+2012/13,20,4,TSG Hoffenheim,SC Freiburg,2,1
+2012/13,20,5,1. FSV Mainz 05,Bayern München,0,3
+2012/13,20,6,Fortuna Düsseldorf,VfB Stuttgart,3,1
+2012/13,20,7,Hamburger SV,Eintracht Frankfurt,0,2
+2012/13,20,8,1. FC Nürnberg,Bor. Mönchengladbach,2,1
+2012/13,20,9,Bayer 04 Leverkusen,Borussia Dortmund,2,3
+2012/13,19,1,Borussia Dortmund,1. FC Nürnberg,3,0
+2012/13,19,2,Bor. Mönchengladbach,Fortuna Düsseldorf,2,1
+2012/13,19,3,Hannover 96,VfL Wolfsburg,2,1
+2012/13,19,4,FC Augsburg,FC Schalke 04,0,0
+2012/13,19,5,SpVgg Greuther Fürth,1. FSV Mainz 05,0,3
+2012/13,19,6,Eintracht Frankfurt,TSG Hoffenheim,2,1
+2012/13,19,7,SC Freiburg,Bayer 04 Leverkusen,0,0
+2012/13,19,8,Hamburger SV,Werder Bremen,3,2
+2012/13,19,9,VfB Stuttgart,Bayern München,0,2
+2012/13,18,1,FC Schalke 04,Hannover 96,5,4
+2012/13,18,2,Bayern München,SpVgg Greuther Fürth,2,0
+2012/13,18,3,Bayer 04 Leverkusen,Eintracht Frankfurt,3,1
+2012/13,18,4,VfL Wolfsburg,VfB Stuttgart,2,0
+2012/13,18,5,TSG Hoffenheim,Bor. Mönchengladbach,0,0
+2012/13,18,6,1. FSV Mainz 05,SC Freiburg,0,0
+2012/13,18,7,Werder Bremen,Borussia Dortmund,0,5
+2012/13,18,8,1. FC Nürnberg,Hamburger SV,1,1
+2012/13,18,9,Fortuna Düsseldorf,FC Augsburg,2,3
+2012/13,17,1,Bayern München,Bor. Mönchengladbach,1,1
+2012/13,17,2,Bayer 04 Leverkusen,Hamburger SV,3,0
+2012/13,17,3,VfL Wolfsburg,Eintracht Frankfurt,0,2
+2012/13,17,4,1. FSV Mainz 05,VfB Stuttgart,3,1
+2012/13,17,5,SpVgg Greuther Fürth,FC Augsburg,1,1
+2012/13,17,6,Fortuna Düsseldorf,Hannover 96,2,1
+2012/13,17,7,FC Schalke 04,SC Freiburg,1,3
+2012/13,17,8,TSG Hoffenheim,Borussia Dortmund,1,3
+2012/13,17,9,Werder Bremen,1. FC Nürnberg,1,1
+2012/13,16,1,Hamburger SV,TSG Hoffenheim,2,0
+2012/13,16,2,Borussia Dortmund,VfL Wolfsburg,2,3
+2012/13,16,3,VfB Stuttgart,FC Schalke 04,3,1
+2012/13,16,4,1. FC Nürnberg,Fortuna Düsseldorf,2,0
+2012/13,16,5,SC Freiburg,SpVgg Greuther Fürth,1,0
+2012/13,16,6,FC Augsburg,Bayern München,0,2
+2012/13,16,7,Eintracht Frankfurt,Werder Bremen,4,1
+2012/13,16,8,Bor. Mönchengladbach,1. FSV Mainz 05,2,0
+2012/13,16,9,Hannover 96,Bayer 04 Leverkusen,3,2
+2012/13,15,1,Fortuna Düsseldorf,Eintracht Frankfurt,4,0
+2012/13,15,2,FC Schalke 04,Bor. Mönchengladbach,1,1
+2012/13,15,3,Bayer 04 Leverkusen,1. FC Nürnberg,1,0
+2012/13,15,4,1. FSV Mainz 05,Hannover 96,2,1
+2012/13,15,5,FC Augsburg,SC Freiburg,1,1
+2012/13,15,6,SpVgg Greuther Fürth,VfB Stuttgart,0,1
+2012/13,15,7,Bayern München,Borussia Dortmund,1,1
+2012/13,15,8,TSG Hoffenheim,Werder Bremen,1,4
+2012/13,15,9,VfL Wolfsburg,Hamburger SV,1,1
+2012/13,14,1,Borussia Dortmund,Fortuna Düsseldorf,1,1
+2012/13,14,2,Hannover 96,SpVgg Greuther Fürth,2,0
+2012/13,14,3,Hamburger SV,FC Schalke 04,3,1
+2012/13,14,4,Eintracht Frankfurt,1. FSV Mainz 05,1,3
+2012/13,14,5,Bor. Mönchengladbach,VfL Wolfsburg,2,0
+2012/13,14,6,VfB Stuttgart,FC Augsburg,2,1
+2012/13,14,7,Werder Bremen,Bayer 04 Leverkusen,1,4
+2012/13,14,8,SC Freiburg,Bayern München,0,2
+2012/13,14,9,1. FC Nürnberg,TSG Hoffenheim,4,2
+2012/13,13,1,Fortuna Düsseldorf,Hamburger SV,2,0
+2012/13,13,2,Bayern München,Hannover 96,5,0
+2012/13,13,3,FC Schalke 04,Eintracht Frankfurt,1,1
+2012/13,13,4,VfL Wolfsburg,Werder Bremen,1,1
+2012/13,13,5,1. FSV Mainz 05,Borussia Dortmund,1,2
+2012/13,13,6,SpVgg Greuther Fürth,1. FC Nürnberg,0,0
+2012/13,13,7,SC Freiburg,VfB Stuttgart,3,0
+2012/13,13,8,TSG Hoffenheim,Bayer 04 Leverkusen,1,2
+2012/13,13,9,FC Augsburg,Bor. Mönchengladbach,1,1
+2012/13,12,1,Borussia Dortmund,SpVgg Greuther Fürth,3,1
+2012/13,12,2,Bor. Mönchengladbach,VfB Stuttgart,1,2
+2012/13,12,3,Hannover 96,SC Freiburg,1,2
+2012/13,12,4,1. FC Nürnberg,Bayern München,1,1
+2012/13,12,5,Hamburger SV,1. FSV Mainz 05,1,0
+2012/13,12,6,Eintracht Frankfurt,FC Augsburg,4,2
+2012/13,12,7,Bayer 04 Leverkusen,FC Schalke 04,2,0
+2012/13,12,8,Werder Bremen,Fortuna Düsseldorf,2,1
+2012/13,12,9,TSG Hoffenheim,VfL Wolfsburg,1,3
+2012/13,11,1,1. FSV Mainz 05,1. FC Nürnberg,2,1
+2012/13,11,2,Bayern München,Eintracht Frankfurt,2,0
+2012/13,11,3,FC Schalke 04,Werder Bremen,2,1
+2012/13,11,4,SC Freiburg,Hamburger SV,0,0
+2012/13,11,5,FC Augsburg,Borussia Dortmund,1,3
+2012/13,11,6,Fortuna Düsseldorf,TSG Hoffenheim,1,1
+2012/13,11,7,VfL Wolfsburg,Bayer 04 Leverkusen,3,1
+2012/13,11,8,VfB Stuttgart,Hannover 96,2,4
+2012/13,11,9,SpVgg Greuther Fürth,Bor. Mönchengladbach,2,4
+2012/13,10,1,Eintracht Frankfurt,SpVgg Greuther Fürth,1,1
+2012/13,10,2,Borussia Dortmund,VfB Stuttgart,0,0
+2012/13,10,3,Bor. Mönchengladbach,SC Freiburg,1,1
+2012/13,10,4,Hannover 96,FC Augsburg,2,0
+2012/13,10,5,1. FC Nürnberg,VfL Wolfsburg,1,0
+2012/13,10,6,TSG Hoffenheim,FC Schalke 04,3,2
+2012/13,10,7,Hamburger SV,Bayern München,0,3
+2012/13,10,8,Bayer 04 Leverkusen,Fortuna Düsseldorf,3,2
+2012/13,10,9,Werder Bremen,1. FSV Mainz 05,2,1
+2012/13,9,1,FC Augsburg,Hamburger SV,0,2
+2012/13,9,2,FC Schalke 04,1. FC Nürnberg,1,0
+2012/13,9,3,SC Freiburg,Borussia Dortmund,0,2
+2012/13,9,4,1. FSV Mainz 05,TSG Hoffenheim,3,0
+2012/13,9,5,SpVgg Greuther Fürth,Werder Bremen,1,1
+2012/13,9,6,Fortuna Düsseldorf,VfL Wolfsburg,1,4
+2012/13,9,7,VfB Stuttgart,Eintracht Frankfurt,2,1
+2012/13,9,8,Bayern München,Bayer 04 Leverkusen,1,2
+2012/13,9,9,Hannover 96,Bor. Mönchengladbach,2,3
+2012/13,8,1,TSG Hoffenheim,SpVgg Greuther Fürth,3,3
+2012/13,8,2,Borussia Dortmund,FC Schalke 04,1,2
+2012/13,8,3,Bayer 04 Leverkusen,1. FSV Mainz 05,2,2
+2012/13,8,4,VfL Wolfsburg,SC Freiburg,0,2
+2012/13,8,5,Eintracht Frankfurt,Hannover 96,3,1
+2012/13,8,6,Fortuna Düsseldorf,Bayern München,0,5
+2012/13,8,7,Werder Bremen,Bor. Mönchengladbach,4,0
+2012/13,8,8,1. FC Nürnberg,FC Augsburg,0,0
+2012/13,8,9,Hamburger SV,VfB Stuttgart,0,1
+2012/13,7,1,FC Augsburg,Werder Bremen,3,1
+2012/13,7,2,Bayern München,TSG Hoffenheim,2,0
+2012/13,7,3,FC Schalke 04,VfL Wolfsburg,3,0
+2012/13,7,4,SC Freiburg,1. FC Nürnberg,3,0
+2012/13,7,5,1. FSV Mainz 05,Fortuna Düsseldorf,1,0
+2012/13,7,6,SpVgg Greuther Fürth,Hamburger SV,0,1
+2012/13,7,7,Bor. Mönchengladbach,Eintracht Frankfurt,2,0
+2012/13,7,8,VfB Stuttgart,Bayer 04 Leverkusen,2,2
+2012/13,7,9,Hannover 96,Borussia Dortmund,1,1
+2012/13,6,1,Fortuna Düsseldorf,FC Schalke 04,2,2
+2012/13,6,2,Bayer 04 Leverkusen,SpVgg Greuther Fürth,2,0
+2012/13,6,3,Werder Bremen,Bayern München,0,2
+2012/13,6,4,1. FC Nürnberg,VfB Stuttgart,0,2
+2012/13,6,5,TSG Hoffenheim,FC Augsburg,0,0
+2012/13,6,6,Hamburger SV,Hannover 96,1,0
+2012/13,6,7,Borussia Dortmund,Bor. Mönchengladbach,5,0
+2012/13,6,8,Eintracht Frankfurt,SC Freiburg,2,1
+2012/13,6,9,VfL Wolfsburg,1. FSV Mainz 05,0,2
+2012/13,5,1,Bayern München,VfL Wolfsburg,3,0
+2012/13,5,2,FC Schalke 04,1. FSV Mainz 05,3,0
+2012/13,5,3,SpVgg Greuther Fürth,Fortuna Düsseldorf,0,2
+2012/13,5,4,Eintracht Frankfurt,Borussia Dortmund,3,3
+2012/13,5,5,Bor. Mönchengladbach,Hamburger SV,2,2
+2012/13,5,6,VfB Stuttgart,TSG Hoffenheim,0,3
+2012/13,5,7,Hannover 96,1. FC Nürnberg,4,1
+2012/13,5,8,SC Freiburg,Werder Bremen,1,2
+2012/13,5,9,FC Augsburg,Bayer 04 Leverkusen,1,3
+2012/13,4,1,1. FC Nürnberg,Eintracht Frankfurt,1,2
+2012/13,4,2,FC Schalke 04,Bayern München,0,2
+2012/13,4,3,VfL Wolfsburg,SpVgg Greuther Fürth,1,1
+2012/13,4,4,1. FSV Mainz 05,FC Augsburg,2,0
+2012/13,4,5,Hamburger SV,Borussia Dortmund,3,2
+2012/13,4,6,Fortuna Düsseldorf,SC Freiburg,0,0
+2012/13,4,7,Bayer 04 Leverkusen,Bor. Mönchengladbach,1,1
+2012/13,4,8,Werder Bremen,VfB Stuttgart,2,2
+2012/13,4,9,TSG Hoffenheim,Hannover 96,3,1
+2012/13,3,1,FC Augsburg,VfL Wolfsburg,0,0
+2012/13,3,2,Borussia Dortmund,Bayer 04 Leverkusen,3,0
+2012/13,3,3,Bayern München,1. FSV Mainz 05,3,1
+2012/13,3,4,Bor. Mönchengladbach,1. FC Nürnberg,2,3
+2012/13,3,5,VfB Stuttgart,Fortuna Düsseldorf,0,0
+2012/13,3,6,Hannover 96,Werder Bremen,3,2
+2012/13,3,7,SpVgg Greuther Fürth,FC Schalke 04,0,2
+2012/13,3,8,SC Freiburg,TSG Hoffenheim,5,3
+2012/13,3,9,Eintracht Frankfurt,Hamburger SV,3,2
+2012/13,2,1,1. FSV Mainz 05,SpVgg Greuther Fürth,0,1
+2012/13,2,2,FC Schalke 04,FC Augsburg,3,1
+2012/13,2,3,Bayer 04 Leverkusen,SC Freiburg,2,0
+2012/13,2,4,Werder Bremen,Hamburger SV,2,0
+2012/13,2,5,1. FC Nürnberg,Borussia Dortmund,1,1
+2012/13,2,6,TSG Hoffenheim,Eintracht Frankfurt,0,4
+2012/13,2,7,Fortuna Düsseldorf,Bor. Mönchengladbach,0,0
+2012/13,2,8,VfL Wolfsburg,Hannover 96,0,4
+2012/13,2,9,Bayern München,VfB Stuttgart,6,1
+2012/13,1,1,Borussia Dortmund,Werder Bremen,2,1
+2012/13,1,2,Bor. Mönchengladbach,TSG Hoffenheim,2,1
+2012/13,1,3,SC Freiburg,1. FSV Mainz 05,1,1
+2012/13,1,4,FC Augsburg,Fortuna Düsseldorf,0,2
+2012/13,1,5,Hamburger SV,1. FC Nürnberg,0,1
+2012/13,1,6,SpVgg Greuther Fürth,Bayern München,0,3
+2012/13,1,7,Eintracht Frankfurt,Bayer 04 Leverkusen,2,1
+2012/13,1,8,VfB Stuttgart,VfL Wolfsburg,0,1
+2012/13,1,9,Hannover 96,FC Schalke 04,2,2

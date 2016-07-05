@@ -1,4 +1,4 @@
-playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
+playoffs2 = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
 
 # discretize the result of a game to a factor of 3 levels
 playoffs$result = NA
@@ -17,36 +17,35 @@ levels(playoffs$result) = c("loss", "draw", "win")
 
 playoffs$id = NULL
 playoffs$max1 = NULL
-playoffs$max2 = NULL
 playoffs$max1_opponent = NULL
 playoffs$max2_opponent = NULL
-# playoffs$vicinity = NULL
-# playoffs$vicinity_opponent = NULL
+playoffs$vicinity = NULL
+playoffs$vicinity_opponent = NULL
 playoffs$foreigners = NULL
 playoffs$foreigners_opponent = NULL
 playoffs$age_coach = NULL
 playoffs$age_coach_opponent = NULL
-
-# thos are going to be replaced by our values
+playoffs$EL_players = NULL
+playoffs$EL_players_opponent = NULL
 playoffs$GDP = NULL
 playoffs$GDP_opponent = NULL
 playoffs$population = NULL
 playoffs$population_opponent = NULL
-
-# remove some atributes to simplify for now
-# those will not be removed in the final model
-
 playoffs$phase = NULL
 playoffs$stage = NULL
 playoffs$goals = NULL
-
 playoffs$age = NULL
 playoffs$age_opponent = NULL
-# playoffs$nationality_coach = NULL
-# playoffs$nationality_coach_opponent = NULL
+playoffs$host = NULL
+playoffs$host_opponent = NULL
+playoffs$FIFA_rank = NULL
+playoffs$FIFA_rank_opponent = NULL
+playoffs$UEFA_rank_opponent = NULL
+playoffs$nationality_coach = NULL
+playoffs$nationality_coach_opponent = NULL
 
 # transform the year to the distance of the current competition
-playoffs$year = 2016 - playoffs$year
+playoffs$year = NULL
 
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 
@@ -83,7 +82,8 @@ for (i in 1:length(scores[["Team"]])) {
     }
   }
 }
-playoffs$team = NULL
-playoffs$opponent = NULL
+
+# playoffs$team = NULL
+# playoffs$opponent = NULL
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 

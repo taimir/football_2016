@@ -12,17 +12,22 @@ names(neues16) = c("team", "champ_league", "uefa_cup", "Grenzland", "trainer_age
 # Load the data into R
 playoffs = read.csv("data/playoffs.csv", header=TRUE, sep=",")
 
-# format as factors
-playoffs$host = as.factor(playoffs$host)
-playoffs$host_opponent = as.factor(playoffs$host_opponent)
-playoffs$vicinity = as.factor(playoffs$vicinity)
-playoffs$vicinity_opponent = as.factor(playoffs$vicinity_opponent)
-playoffs$nationality_coach = as.factor(playoffs$nationality_coach)
-playoffs$nationality_coach_opponent = as.factor(playoffs$nationality_coach_opponent)
+# load the library
+library(mlbench)
+library(caret)
+# prepare training scheme
+control <- trainControl(method="cv", number=10, repeats=3)
+# train the model
+model <- train(result~., data=playoffs, method="lssvmRadial", trControl=control)
+# estimate variable importance
+importance <- varImp(model, scale=FALSE)
+# summarize importance
+print(importance)
+# plot importance
+plot(importance)
 
-
-library(FSelector)
-weights_info_gain = information.gain(result ~ ., data=playoffs)
-weights_info_gain
-
-weights_info_gain[order(-weights_info_gain$attr_importance), , drop = FALSE]
+# library(FSelector)
+# weights_info_gain = information.gain(result ~ ., data=playoffs)
+# weights_info_gain
+# 
+# weights_info_gain[order(-weights_info_gain$attr_importance), , drop = FALSE]

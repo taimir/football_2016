@@ -39,6 +39,11 @@ We got 61% accuracy on the validation set. Additionally we reasoned that it woul
 better if we model the predicted variable as a bernoulli, with a reject region for draw,
 not as a thernery categorical.
 
+We might want to model the goal difference, instead of modelling the goals of each team separately.
+
+We used the caret package to do feature selection, varImp(). We added some self-engineered features
+to the data set, which proved to be of some importance.
+
 
 
 
