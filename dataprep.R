@@ -1,4 +1,4 @@
-playoffs2 = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
+playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
 
 # discretize the result of a game to a factor of 3 levels
 playoffs$result = NA
@@ -45,20 +45,22 @@ playoffs$nationality_coach = NULL
 playoffs$nationality_coach_opponent = NULL
 
 # transform the year to the distance of the current competition
-playoffs$year = NULL
+# playoffs$year = NULL # sorry but I need it. I moved the removal at the end.
 
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 
 # add column with scores accoring to the performance in the previous three years
 scores = read.csv("data/Team_scores_08-12.txt", header=TRUE, sep="\t")
 scores = as.data.frame(scores)
+colnames(scores) = c("team", "score_04", "score_08", "score_12")
 playoffs$past_scores = rep(0, length(playoffs$team))
 playoffs$past_scores_opponent = rep(0, length(playoffs$team))
-for (i in 1:length(scores[["Team"]])) {
-  team = as.character(scores[i,"Team"])
-  sc4 = scores[i,"Score_04"]
-  sc8 = scores[i,"Score_08"]
-  sc12 = scores[i,"Score_12"]
+for (i in 1:length(scores[["team"]])) {
+  team = as.character(scores[i,"team"])
+  sc4 = scores[i,"score_04"]
+  sc8 = scores[i,"score_08"]
+  sc12 = scores[i,"score_12"]
+  print(team)
   for (j in 1:length(playoffs$team)){
     if(as.character(playoffs[j,]$team) == team){
       if(playoffs[j,]$year == 2004){
@@ -83,7 +85,56 @@ for (i in 1:length(scores[["Team"]])) {
   }
 }
 
+
+append_info = function(df, new_df, col_name){
+  for (i in 1:length(new_df[["team"]])) {
+    team = as.character(new_df[i,"team"])
+    for (j in 1:length(df$team)){
+      if(as.character(df[j,]$team) == team){
+        df[j, col_name] = new_df[i, col_name]
+      }
+    }
+    for (j in 1:length(df$opponent)){
+      if(as.character(df[j,]$opponent) == team){
+        df[j, paste(col_name, "opponent", sep="_")] = new_df[i, col_name]
+      }
+    }
+  }
+  return(df)
+}
+
+# add column with nation's GDP, population and #won_medals in oly. games 
+nat_info = read.csv("data/additional_info_countries.txt", header=TRUE, sep="\t")
+nat_info = as.data.frame(nat_info)
+colnames(nat_info) = c("team", "population", "GDP", "olymedals")
+
+playoffs$GDP = rep(0, length(playoffs$team))
+playoffs$GDP_opponent = rep(0, length(playoffs$team))
+playoffs$population = rep(0, length(playoffs$team))
+playoffs$population_opponent = rep(0, length(playoffs$team))
+
+playoffs = append_info(playoffs, nat_info, "GDP")
+playoffs = append_info(playoffs, nat_info, "population")
+
+# this one is very tricky so better not use it:
+# playoffs$olymedals = rep(0, length(playoffs$team))
+# playoffs$olymedals_opponent = rep(0, length(playoffs$team))
+# playoffs = append_info(playoffs, nat_info, "olymedals")
+
+# normalize the features GDP and populations since they yield super large numbers in comaprison
+# to the other features.
+playoffs[, "population"] = 
+  apply(t(playoffs[, "population"]), 2, FUN = function(x){x/max(playoffs[, "population"])})
+playoffs[, "population_opponent"] = 
+  apply(t(playoffs[, "population_opponent"]), 2, FUN = function(x){x/max(playoffs[, "population_opponent"])})
+playoffs[, "GDP"] = 
+  apply(t(playoffs[, "GDP"]), 2, FUN = function(x){x/max(playoffs[, "GDP"])})
+playoffs[, "GDP_opponent"] = 
+  apply(t(playoffs[, "GDP_opponent"]), 2, FUN = function(x){x/max(playoffs[, "GDP_opponent"])})
+
 # playoffs$team = NULL
 # playoffs$opponent = NULL
+playoffs$year = NULL
+
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 
