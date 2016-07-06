@@ -28,14 +28,25 @@ plot(importance)
 
 # dim reduct of the team-opponent structured data
 library(tsne)
-tsne_playoffs = tsne(as.matrix(playoffs[-c(1, 2, 15)]), 
+filtered_match_duplicates = playoffs[-(seq(2,to=nrow(playoffs),by=2)),]
+filtered_match_duplicates$color = rep(NA, length(filtered_match_duplicates$team))
+for (i in 1:length(filtered_match_duplicates$team)) {
+  if(as.character(filtered_match_duplicates[i,"result"]) == "win"){
+    filtered_match_duplicates[i,"color"] = "green"
+  }else if(as.character(filtered_match_duplicates[i,"result"]) == "draw"){
+    filtered_match_duplicates[i,"color"] = "yellow"
+  }else{
+    filtered_match_duplicates[i,"color"] = "red"
+  }
+}
+tsne_playoffs = tsne(as.matrix(filtered_match_duplicates[-c(1, 2, 15, 22)]), 
                      k = 2, 
-                     initial_dims = length(names(playoffs)), 
-                     perplexity = 5, 
-                     max_iter = 500)
+                     initial_dims = length(names(filtered_match_duplicates)), 
+                     perplexity = 8, 
+                     max_iter = 1000)
 
 plot(tsne_playoffs, t='n')
-text(tsne_playoffs, labels=paste(substr(playoffs$team, 1,2), substr(playoffs$opponent, 1,2), sep="-"))
+text(tsne_playoffs, labels=paste(substr(playoffs$team, 1,2), substr(playoffs$opponent, 1,2), sep="-"), col=filtered_match_duplicates$color)
 
 # dim reduct of the individual teams
 team_data_only = playoffs[c(1,3,4,5,6,7,8,9,16,18,20)]
