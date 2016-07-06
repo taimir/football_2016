@@ -26,6 +26,16 @@ print(importance)
 # plot importance
 plot(importance)
 
+library(tsne)
+tsne_playoffs = tsne(as.matrix(playoffs[-c(1, 2, 15)]), 
+                     k = 2, 
+                     initial_dims = length(names(playoffs)), 
+                     perplexity = 10, 
+                     max_iter = 300)
+
+plot(tsne_playoffs, t='n')
+text(tsne_playoffs, labels=paste(substr(playoffs$team, 1,2), substr(playoffs$opponent, 1,2), sep="-"))
+
 # library(FSelector)
 # weights_info_gain = information.gain(result ~ ., data=playoffs)
 # weights_info_gain
