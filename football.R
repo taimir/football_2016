@@ -26,6 +26,7 @@ print(importance)
 # plot importance
 plot(importance)
 
+# dim reduct of the team-opponent structured data
 library(tsne)
 tsne_playoffs = tsne(as.matrix(playoffs[-c(1, 2, 15)]), 
                      k = 2, 
@@ -35,6 +36,19 @@ tsne_playoffs = tsne(as.matrix(playoffs[-c(1, 2, 15)]),
 
 plot(tsne_playoffs, t='n')
 text(tsne_playoffs, labels=paste(substr(playoffs$team, 1,2), substr(playoffs$opponent, 1,2), sep="-"))
+
+# dim reduct of the individual teams
+team_data_only = unique(playoffs[c(1,3,4,5,6,7,8,9,16,18,20)])
+#opp_data_only = playoffs[c(2,10,11,12,13,14,17,19)]
+
+tsne_team = tsne(as.matrix(team_data_only[-c(1,2,3)]), 
+                     k = 2, 
+                     initial_dims = length(names(team_data_only)), 
+                     perplexity = 2, 
+                     max_iter = 300)
+
+plot(tsne_team, t='n')
+text(tsne_team, labels=substr(playoffs$team, 1,2))
 
 # library(FSelector)
 # weights_info_gain = information.gain(result ~ ., data=playoffs)
