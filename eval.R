@@ -1,6 +1,4 @@
-original = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
 playoffs = read.csv("data/playoffs.csv", header=TRUE, sep=",")
-playoffs$id = original$id
 
 ## predictions of next day match from minday to last day
 outcomeConfidence = function(minday, data, predictProbs){
@@ -34,23 +32,28 @@ outcomeConfidence = function(minday, data, predictProbs){
 #################
 ## predictions and confidence scores for different models
 ## for the last championship (30 days)
-minday = max(playoffs$id) - 30
+minday = max(playoffs$id) - 60
 
-source("log_reg.R")
-resMultinomHeuristic = outcomeConfidence(minday, playoffs, predictProbsMultinomHeuristic)
-resMultinom = outcomeConfidence(minday, playoffs, predictProbsMultinom)
+# temporary, until the last match is out
+playoffs = playoffs[1:(nrow(playoffs) - 2),]
+playoffs_cat = playoffs
+playoffs_cat$goals = NULL
 
-source("poisson.R")
 playoffs_goals = playoffs
 playoffs_goals$result = NULL
-playoffs_goals$goals = original$goals
+
+source("log_reg.R")
+resMultinomHeuristic = outcomeConfidence(minday, playoffs_cat, predictProbsMultinomHeuristic)
+resMultinom = outcomeConfidence(minday, playoffs_cat, predictProbsMultinom)
+
+source("poisson.R")
 resPoisson = outcomeConfidence(minday, playoffs_goals, predictProbsPoissonBasic)
 
 source("rf.R")
-#resRandomForest = outcomeConfidence(minday, playoffs, predictProbsRandomForest)
+#resRandomForest = outcomeConfidence(minday, playoffs_cat, predictProbsRandomForest)
 
 source("svm.R")
-resSupportVectorMachine = outcomeConfidence(minday, playoffs, predictSupportVectorMachine)
+resSupportVectorMachine = outcomeConfidence(minday, playoffs_cat, predictSupportVectorMachine)
 
 ## number of correct predictions: this is the value to perform best on
 # sum(res$pred == playoffs$result, na.rm=TRUE)
@@ -60,9 +63,9 @@ resSupportVectorMachine = outcomeConfidence(minday, playoffs, predictSupportVect
 
 ## getting more insights: precisions  (proportion of true positives) vs ranked predictions
 getPrecision = function(res, data){
-  res$tp = data$result == res$pred
+  res$tp = (data$result == res$pred)
   prec_res = res[order(res$confidence, decreasing=TRUE), ]
-  prec_res$pr = cumsum(prec_res$tp)/1:nrow(prec_res)
+  prec_res$pr = cumsum(prec_res$tp)/(1:nrow(prec_res))
   prec_res
 }
 

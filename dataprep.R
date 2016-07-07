@@ -204,7 +204,7 @@ playoffs = append_info(playoffs, nat_info, "population")
 
 ## normalization of all not factor-features
 for (col_name in names(playoffs)) {
-  if (!is.factor(playoffs[,col_name]) & col_name != "goals"){
+  if (!is.factor(playoffs[,col_name]) & col_name != "goals" & col_name != "id"){
     playoffs[,col_name] = apply(t(playoffs[, col_name]), 2, 
                 FUN = function(x){(x-min(playoffs[, col_name]))/(max(playoffs[, col_name])-min(playoffs[, col_name]))})
   }
