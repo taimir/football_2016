@@ -34,7 +34,7 @@ outcomeConfidence = function(minday, data, predictProbs){
 #################
 ## predictions and confidence scores for different models
 ## for the last championship (30 days)
-minday = max(playoffs$id) - 15
+minday = max(playoffs$id) - 30
 
 source("log_reg.R")
 resMultinomHeuristic = outcomeConfidence(minday, playoffs, predictProbsMultinomHeuristic)
@@ -47,7 +47,10 @@ playoffs_goals$goals = original$goals
 resPoisson = outcomeConfidence(minday, playoffs_goals, predictProbsPoissonBasic)
 
 source("rf.R")
-resRandomForest = outcomeConfidence(minday, playoffs, predictProbsRandomForest)
+#resRandomForest = outcomeConfidence(minday, playoffs, predictProbsRandomForest)
+
+source("svm.R")
+resSupportVectorMachine = outcomeConfidence(minday, playoffs, predictSupportVectorMachine)
 
 ## number of correct predictions: this is the value to perform best on
 # sum(res$pred == playoffs$result, na.rm=TRUE)
@@ -63,14 +66,16 @@ getPrecision = function(res, data){
   prec_res
 }
 
-precision = getPrecision(resMultinomHeuristic, playoffs)
+precisionMultinomHeuristic = getPrecision(resMultinomHeuristic, playoffs)
 precisionMultinom = getPrecision(resMultinom, playoffs)
 precisionPoisson = getPrecision(resPoisson, playoffs)
-precisionRandomForest = getPrecision(resRandomForest, playoffs)
+precisionSupportVectorMachine = getPrecision(resSupportVectorMachine, playoffs)
+#precisionRandomForest = getPrecision(resRandomForest, playoffs)
 
-plot(precision$pr, ylim=c(0,1), type="l", xlab="prediction ranked by decreasing confidence score", ylab="Precision (correct proportion of guesses)")
+plot(precisionMultinomHeuristic$pr, ylim=c(0,1), type="l", xlab="prediction ranked by decreasing confidence score", ylab="Precision (correct proportion of guesses)")
 lines(precisionMultinom$pr, col="red")
 lines(precisionPoisson$pr, col="green")
-lines(precisionRandomForest$pr, col="blue")
+#lines(precisionRandomForest$pr, col="blue")
+lines(precisionSupportVectorMachine$pr, col="orange")
 abline(h=0.33, lty = 2, col="grey")
-legend("topright", col=c("black", "red", "green", "blue", "grey"), lty=c(1,1,1,1,2), legend=c("Multinom + heuristic", "Multinom", "Poisson", "Random Forest", "Three-Sided Coin"))
+legend("topright", col=c("black", "red", "green", "blue", "orange", "grey"), lty=c(1,1,1,1,1,2), legend=c("Multinom + heuristic", "Multinom", "Poisson", "Random Forest", "Support Vector Machine", "Three-Sided Coin"))
