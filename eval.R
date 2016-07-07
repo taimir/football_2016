@@ -34,7 +34,7 @@ outcomeConfidence = function(minday, data, predictProbs){
 #################
 ## predictions and confidence scores for different models
 ## for the last championship (30 days)
-minday = max(playoffs$id) - 1
+minday = max(playoffs$id) - 15
 
 source("log_reg.R")
 resMultinomHeuristic = outcomeConfidence(minday, playoffs, predictProbsMultinomHeuristic)
@@ -73,4 +73,4 @@ lines(precisionMultinom$pr, col="red")
 lines(precisionPoisson$pr, col="green")
 lines(precisionRandomForest$pr, col="blue")
 abline(h=0.33, lty = 2, col="grey")
-legend("topright", col=c("black", "red", "green", "blue", "grey"), lty=1, legend=c("Multinom + heuristic", "Multinom", "Poisson", "Random Forest", "Three-Sided Coin"))
+legend("topright", col=c("black", "red", "green", "blue", "grey"), lty=c(1,1,1,1,2), legend=c("Multinom + heuristic", "Multinom", "Poisson", "Random Forest", "Three-Sided Coin"))
