@@ -32,10 +32,10 @@ outcomeConfidence = function(minday, data, predictProbs){
 #################
 ## predictions and confidence scores for different models
 ## for the last championship (30 days)
-minday = max(playoffs$id) - 60
+minday = max(playoffs$id) - 2
 
 # temporary, until the last match is out
-playoffs = playoffs[1:(nrow(playoffs) - 2),]
+#playoffs = playoffs[1:(nrow(playoffs) - 2),]
 playoffs_cat = playoffs
 playoffs_cat$goals = NULL
 
@@ -50,7 +50,7 @@ source("poisson.R")
 resPoisson = outcomeConfidence(minday, playoffs_goals, predictProbsPoissonBasic)
 
 source("rf.R")
-#resRandomForest = outcomeConfidence(minday, playoffs_cat, predictProbsRandomForest)
+resRandomForest = outcomeConfidence(minday, playoffs_cat, predictProbsRandomForest)
 
 source("svm.R")
 resSupportVectorMachine = outcomeConfidence(minday, playoffs_cat, predictSupportVectorMachine)
@@ -73,12 +73,23 @@ precisionMultinomHeuristic = getPrecision(resMultinomHeuristic, playoffs)
 precisionMultinom = getPrecision(resMultinom, playoffs)
 precisionPoisson = getPrecision(resPoisson, playoffs)
 precisionSupportVectorMachine = getPrecision(resSupportVectorMachine, playoffs)
-#precisionRandomForest = getPrecision(resRandomForest, playoffs)
+precisionRandomForest = getPrecision(resRandomForest, playoffs)
 
 plot(precisionMultinomHeuristic$pr, ylim=c(0,1), type="l", xlab="prediction ranked by decreasing confidence score", ylab="Precision (correct proportion of guesses)")
 lines(precisionMultinom$pr, col="red")
 lines(precisionPoisson$pr, col="green")
-#lines(precisionRandomForest$pr, col="blue")
+lines(precisionRandomForest$pr, col="blue")
 lines(precisionSupportVectorMachine$pr, col="orange")
 abline(h=0.33, lty = 2, col="grey")
 legend("topright", col=c("black", "red", "green", "blue", "orange", "grey"), lty=c(1,1,1,1,1,2), legend=c("Multinom + heuristic", "Multinom", "Poisson", "Random Forest", "Support Vector Machine", "Three-Sided Coin"))
+
+predict_single_game = function(predictions, playoffs, team_name, opponent_name){
+  game_index = which(as.character(playoffs$team) == team_name 
+                     & as.character(playoffs$opponent) == opponent_name)
+  print(game_index)
+  predictions[game_index,]
+}
+
+result_DE_FR_poi = predict_single_game(resPoisson, playoffs, "Germany", "France")
+print(result_DE_FR_poi)
+
