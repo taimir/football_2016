@@ -1,5 +1,13 @@
 playoffs = read.csv("data/EM2004.2012.publ.txt", header=TRUE, sep="\t")
 
+# format as factors
+playoffs$host = as.factor(playoffs$host)
+playoffs$host_opponent = as.factor(playoffs$host_opponent)
+playoffs$vicinity = as.factor(playoffs$vicinity)
+playoffs$vicinity_opponent = as.factor(playoffs$vicinity_opponent)
+playoffs$nationality_coach = as.factor(playoffs$nationality_coach)
+playoffs$nationality_coach_opponent = as.factor(playoffs$nationality_coach_opponent)
+
 # discretize the result of a game to a factor of 3 levels
 playoffs$result = NA
 for(team1 in playoffs$team) {
@@ -146,7 +154,8 @@ for (col_name in names(playoffs)) {
 # playoffs$opponent = NULL
 playoffs$year = NULL
 
-
+filtered_match_duplicates = playoffs[-(seq(2,to=nrow(playoffs),by=2)),]
+write.csv(filtered_match_duplicates, file="data/playoffs_wo_duplicates.csv", row.names = FALSE)
 
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 

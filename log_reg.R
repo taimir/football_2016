@@ -31,17 +31,10 @@ predictProbsMultinom <- function (pred_matches, data){
   library(nnet)
   # remove team names from training
   train_data = data[-c(1,2)]
+  pred_matches = pred_matches[-c(1,2)]
   model <- multinom(result ~ ., data = train_data)
-  probs = sapply(
-    1:nrow(pred_matches),
-    function(i){
-      team = as.character(pred_matches[i,1])
-      opponent = as.character(pred_matches[i,2])
-      # predict without the team names
-      return(predict(model, type="probs",newdata=pred_matches[i, -c(1,2)]))
-    }
-  )
-  t(probs)
+  probs = predict(model, type="probs",newdata=pred_matches)
+  #evt transpose??
 }
 
 run_log_reg = function(playoffs){
@@ -59,10 +52,7 @@ run_log_reg = function(playoffs){
   # playoffs$result = factor(playoffs$result)
   
   train_data = playoffs[-valid_indices,]
-  
-  
-  
-  
+
   library(nnet)
   model <- multinom(result ~ ., data = train_data)
   
@@ -97,7 +87,7 @@ main <- function() {
   playoffs$team = NULL
   playoffs$opponent = NULL
   
-  num_tests = 1
+  num_tests = 100
   avg_performance = rep(-1, num_tests)
   iteration_wo_errors = -1
   for (i in 1:num_tests) {
@@ -108,5 +98,5 @@ main <- function() {
   print(iteration_wo_errors)
 }
 
-# main()
+main()
 
