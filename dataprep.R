@@ -18,7 +18,6 @@ levels(playoffs$result) = c("loss", "draw", "win")
 playoffs$id = NULL
 playoffs$max1 = NULL
 playoffs$max1_opponent = NULL
-playoffs$max2_opponent = NULL
 playoffs$vicinity = NULL
 playoffs$vicinity_opponent = NULL
 playoffs$foreigners = NULL
@@ -40,7 +39,6 @@ playoffs$host = NULL
 playoffs$host_opponent = NULL
 playoffs$FIFA_rank = NULL
 playoffs$FIFA_rank_opponent = NULL
-playoffs$UEFA_rank_opponent = NULL
 playoffs$nationality_coach = NULL
 playoffs$nationality_coach_opponent = NULL
 

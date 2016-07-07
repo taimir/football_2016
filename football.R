@@ -40,21 +40,45 @@ for (i in 1:length(filtered_match_duplicates$team)) {
   }
 }
 
-no_names = filtered_match_duplicates[-c(1, 2, 15, 22)]
+# =============================
+# Data visualization & Feature selection
+# =============================
+# odds, odds_opponent are good
+# CL_players opponent are good
+# market_value is good as well
+# UEFA_rank against UEFA_rank opponent / UEFA_points opponent is good
+# GDP vs GDP_opponent seems good
+# population seems sort of OK
+# max2 seems OK
 
+# max1 is messy
+# past_scores vs past_scores opponent is somewhat messy
+# FIFA_Points are somewhat messy
+# age is very messy, very slight tendencies ...
+
+no_names = playoffs2[c(10,28)] 
+plot(as.matrix(no_names), t='n')
+text(no_names, labels=paste(substr(filtered_match_duplicates$team, 1,2), substr(filtered_match_duplicates$opponent, 1,2), sep="-"), col=filtered_match_duplicates$color)
+
+no_names =  filtered_match_duplicates[-c(1, 2, 17, 24)]
 tsne_playoffs = tsne(as.matrix(no_names), 
                      k = 2, 
                      initial_dims = length(names(no_names)), 
                      perplexity = 3, 
                      max_iter = 2000)
 
+library(zoom)
 plot(tsne_playoffs, t='n')
 text(tsne_playoffs, labels=paste(substr(filtered_match_duplicates$team, 1,2), substr(filtered_match_duplicates$opponent, 1,2), sep="-"), col=filtered_match_duplicates$color)
+zm()
+
 
 # attach t-sne columns to the data file
-playoffs$t-sne_1 = tsne_playoffs[,1]
-playoffs$t-sne_2 = tsne_playoffs[,2]
+playoffs$t_sne_1 = tsne_playoffs[,1]
+playoffs$t_sne_2 = tsne_playoffs[,2]
+playoffs$result = factor(playoffs$result, levels=c("loss", "draw", "win"), ordered = TRUE)
 
+model <- train(result~., data=playoffs, method="rf", trControl=control)
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 
 # dim reduct of the individual teams
