@@ -1,0 +1,29 @@
+id,team,opponent,goals,german_team,german_opponent
+1,Switzerland,Poland,1,Schweiz,Polen
+1,Poland,Switzerland,1,Polen,Schweiz
+2,Wales,Northern Ireland,1,Wales,Nordirland
+2,Northern Ireland,Wales,0,Nordirland,Wales
+3,Croatia,Portugal,0,Kroatien,Portugal
+3,Portugal,Croatia,1,Portugal,Kroatien
+4,France,Ireland,2,Frankreich,Irland
+4,Ireland,France,1,Irland,Frankreich
+5,Germany,Slovakia,3,Deutschland,Slowakei
+5,Slovakia,Germany,0,Slowakei,Deutschland
+6,Hungary,Belgium,0,Ungarn,Belgien
+6,Belgium,Hungary,4,Belgien,Ungarn
+7,Italy,Spain,2,Italien,Spanien
+7,Spain,Italy,0,Spanien,Italien
+8,England,Iceland,1,England,Island
+8,Iceland,England,2,Island,England
+9,Poland,Portugal,1,Polen,Portugal
+9,Portugal,Poland,1,Portugal,Polen
+10,Wales,Belgium,3,Wales,Belgien
+10,Belgium,Wales,1,Belgien,Wales
+11,Germany,Italy,1,Deutschland,Italien
+11,Italy,Germany,1,Italien,Deutschland
+12,France,Iceland,5,Frankreich,Island
+12,Iceland,France,2,Island,Frankreich
+13,Portugal,Wales,2,Portugal,Wales
+13,Wales,Portugal,0,Wales,Portugal
+14,Germany,France,,Deutschland,Frankreich
+14,France,Germany,,Frankreich,Deutschland
