@@ -125,6 +125,8 @@ for(team1 in playoffs$team) {
     playoffs[playoffs$team == team2 & playoffs$opponent == team1,]$result = (goals2 - goals1)
   }
 }
+
+# install.packages("arules")
 library(arules)
 playoffs$result = discretize(playoffs$result, method="fixed", categories = c(-Inf, -0.5, 0.5, +Inf))
 levels(playoffs$result) = c("loss", "draw", "win")
