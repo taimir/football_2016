@@ -23,6 +23,18 @@ print(importance)
 # plot importance
 plot(importance)
 
+library(tsne)
+filtered_match_duplicates = playoffs#[-(seq(2,to=nrow(playoffs),by=2)),]
+filtered_match_duplicates$color = rep(NA, length(filtered_match_duplicates$team))
+for (i in 1:length(filtered_match_duplicates$team)) {
+  if(as.character(filtered_match_duplicates[i,"result"]) == "win"){
+    filtered_match_duplicates[i,"color"] = "green"
+  }else if(as.character(filtered_match_duplicates[i,"result"]) == "draw"){
+    filtered_match_duplicates[i,"color"] = "blue"
+  }else{
+    filtered_match_duplicates[i,"color"] = "red"
+  }
+}
 
 ## Plot the features of two teams against each other
 ## Trying to identify meaningful features (visually)
@@ -34,23 +46,8 @@ text(no_names,
                   substr(filtered_match_duplicates$opponent, 1,3), sep="-"), 
      col=filtered_match_duplicates$color)
 
-
-
 ## Dimensionality reduction of the data using tSNE
 ## Trying to identify meaningful features by visual inspection
-library(tsne)
-filtered_match_duplicates = playoffs#[-(seq(2,to=nrow(playoffs),by=2)),]
-filtered_match_duplicates$color = rep(NA, length(filtered_match_duplicates$team))
-for (i in 1:length(filtered_match_duplicates$team)) {
-  if(as.character(filtered_match_duplicates[i,"result"]) == "win"){
-    filtered_match_duplicates[i,"color"] = "green"
-  }else if(as.character(filtered_match_duplicates[i,"result"]) == "draw"){
-    filtered_match_duplicates[i,"color"] = "yellow"
-  }else{
-    filtered_match_duplicates[i,"color"] = "red"
-  }
-}
-
 no_names =  filtered_match_duplicates[-c(1, 2, 18, 23)]
 tsne_playoffs = tsne(as.matrix(no_names), 
                      k = 2, 
@@ -61,8 +58,8 @@ tsne_playoffs = tsne(as.matrix(no_names),
 # install.packages("zoom")
 library(zoom)
 plot(tsne_playoffs, t='n')
-text(tsne_playoffs, labels=paste(substr(filtered_match_duplicates$team, 1,3), 
-                                 substr(filtered_match_duplicates$opponent, 1,3), sep="-"), 
+text(tsne_playoffs, labels=paste(substr(filtered_match_duplicates$team, 1,2), 
+                                 substr(filtered_match_duplicates$opponent, 1,2), sep="-"), 
      col=filtered_match_duplicates$color)
 zm()
 
@@ -90,19 +87,20 @@ playoffs$result = factor(playoffs$result, levels=c("loss", "draw", "win"), order
 write.csv(playoffs, file="data/playoffs.csv", row.names = FALSE)
 
 ## Now do dimensionality reduction for the individual teams as
-## data points, instead of for the matches as data points
-team_data_only = playoffs[c(1,3,4,5,6,7,8,9,16,18,20)]
+## data points, instead of for the matches as data points.
+## We remove all duplicates of the same team, thus considering only the
+## state in 2004 to gain some insight.
+team_data_only = playoffs[c(1,3:9,16,19,21)]
 team_data_only_unique = team_data_only[!duplicated(team_data_only$team),]
-#opp_data_only = playoffs[c(2,10,11,12,13,14,17,19)]
 
 tsne_team = tsne(as.matrix(team_data_only_unique[-1]), 
                      k = 2, 
                      initial_dims = length(names(team_data_only_unique)), 
                      perplexity = 2, 
-                     max_iter = 500)
+                     max_iter = 2000)
 
 plot(tsne_team, t='n')
-text(tsne_team, labels=substr(team_data_only_unique$team, 1,2))
+text(tsne_team, labels=substr(team_data_only_unique$team, 1,3))
 
 ## We wanted to use FSelector for the categorical features,
 ## but we found them to be of insignificant importance
