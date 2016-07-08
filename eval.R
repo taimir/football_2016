@@ -56,12 +56,6 @@ resRandomForest = outcomeConfidence(minday, playoffs_cat, predictProbsRandomFore
 source("svm.R")
 resSupportVectorMachine = outcomeConfidence(minday, playoffs_cat, predictSupportVectorMachine)
 
-## number of correct predictions: this is the value to perform best on
-# sum(res$pred == playoffs$result, na.rm=TRUE)
-## getting more insights: confusion table
-# table(playoffs$result, res$pred)
-
-
 ## getting more insights: precisions  (proportion of true positives) vs ranked predictions
 getPrecision = function(res, data){
   res$tp = (data$result == res$pred)

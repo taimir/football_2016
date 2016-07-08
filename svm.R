@@ -1,5 +1,4 @@
 # SVM
-
 predictSupportVectorMachine <- function (pred_matches, data){
   train_data = data[-c(1,2)]
   pred_matches = pred_matches[-c(1,2)]
@@ -16,22 +15,6 @@ predictSupportVectorMachine <- function (pred_matches, data){
   pred = attr(pred,"probabilities")
   return(pred[,order(colnames(pred)), drop=FALSE])
 }
-
-# train_data = playoffs[-c(1,2)]
-# pred_matches = pred_matches[-c(1,2)]
-# 
-# library(e1071)
-# model_svm = svm(result ~ ., data=train_data, 
-#                 scale=TRUE, 
-#                 type="C-classification",
-#                 kernel="radial",
-#                 cost=1,
-#                 probability=TRUE)
-# 
-# pred = predict(model_svm, playoffs, probability=TRUE)
-# pred = attr(pred,"probabilities")
-# View(pred[,order(colnames(pred)), drop=FALSE])
-
 
 
 
