@@ -32,7 +32,7 @@ outcomeConfidence = function(minday, data, predictProbs){
 #################
 ## predictions and confidence scores for different models
 ## for the last championship (30 days)
-minday = max(playoffs$id) - 2
+minday = max(playoffs$id) - 30
 
 # temporary, until the last match is out
 #playoffs = playoffs[1:(nrow(playoffs) - 2),]
@@ -45,6 +45,7 @@ playoffs_goals$result = NULL
 source("log_reg.R")
 resMultinomHeuristic = outcomeConfidence(minday, playoffs_cat, predictProbsMultinomHeuristic)
 resMultinom = outcomeConfidence(minday, playoffs_cat, predictProbsMultinom)
+resLogRegHard = outcomeConfidence(minday, playoffs_cat, predictProbsHard)
 
 source("poisson.R")
 resPoisson = outcomeConfidence(minday, playoffs_goals, predictProbsPoissonBasic)
@@ -71,17 +72,24 @@ getPrecision = function(res, data){
 
 precisionMultinomHeuristic = getPrecision(resMultinomHeuristic, playoffs)
 precisionMultinom = getPrecision(resMultinom, playoffs)
+precisionLogregHard = getPrecision(resLogRegHard, playoffs)
 precisionPoisson = getPrecision(resPoisson, playoffs)
 precisionSupportVectorMachine = getPrecision(resSupportVectorMachine, playoffs)
 precisionRandomForest = getPrecision(resRandomForest, playoffs)
 
-plot(precisionMultinomHeuristic$pr, ylim=c(0,1), type="l", xlab="prediction ranked by decreasing confidence score", ylab="Precision (correct proportion of guesses)")
+plot(precisionMultinomHeuristic$pr, ylim=c(0,1), type="l", 
+     xlab="prediction ranked by decreasing confidence score", 
+     ylab="Precision (correct proportion of guesses)")
 lines(precisionMultinom$pr, col="red")
+lines(precisionLogregHard$pr, col="purple")
 lines(precisionPoisson$pr, col="green")
 lines(precisionRandomForest$pr, col="blue")
 lines(precisionSupportVectorMachine$pr, col="orange")
 abline(h=0.33, lty = 2, col="grey")
-legend("topright", col=c("black", "red", "green", "blue", "orange", "grey"), lty=c(1,1,1,1,1,2), legend=c("Multinom + heuristic", "Multinom", "Poisson", "Random Forest", "Support Vector Machine", "Three-Sided Coin"))
+
+legend("topright", col=c("black", "red", "purple", "green", "blue", "orange", "grey"), 
+       lty=c(1,1,1,1,1,1,2), 
+       legend=c("Multinom + heuristic", "Multinom", "LogReg hard cutoff", "Poisson", "Random Forest", "Support Vector Machine", "Three-Sided Coin"))
 
 predict_single_game = function(predictions, playoffs, team_name, opponent_name){
   game_index = which(as.character(playoffs$team) == team_name 
@@ -92,4 +100,6 @@ predict_single_game = function(predictions, playoffs, team_name, opponent_name){
 
 result_DE_FR_poi = predict_single_game(resPoisson, playoffs, "Germany", "France")
 print(result_DE_FR_poi)
+
+
 
