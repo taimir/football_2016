@@ -4,7 +4,7 @@
 
 # Load the preprocessed data
 playoffs = read.csv("data/playoffs.csv", header=TRUE, sep=",")
-
+playoffs = playoffs[-1]
 ## Do basic feature selection based on the results of an lssvmRadial kernel
 ## using the mlbench package
 # install.packages("mlbench")
@@ -13,7 +13,10 @@ library(mlbench)
 library(caret)
 
 control <- trainControl(method="cv", number=10, repeats=3)
-model <- train(result~., data=playoffs, method="lssvmRadial", trControl=control)
+model <- train(result~., data=playoffs[colnames(playoffs) != "goals" 
+                                       & colnames(playoffs) != "id"
+                                       & colnames(playoffs) != "team"
+                                       & colnames(playoffs) != "opponent"], method="lssvmRadial", trControl=control)
 # estimate variable importance
 importance <- varImp(model, scale=FALSE)
 print(importance)
@@ -24,7 +27,7 @@ plot(importance)
 ## Plot the features of two teams against each other
 ## Trying to identify meaningful features (visually)
 ## For example:
-no_names = playoffs2[c(10,28)] 
+no_names = playoffs[c(9,16)] 
 plot(as.matrix(no_names), t='n')
 text(no_names, 
      labels=paste(substr(filtered_match_duplicates$team, 1,3), 
@@ -48,7 +51,7 @@ for (i in 1:length(filtered_match_duplicates$team)) {
   }
 }
 
-no_names =  filtered_match_duplicates[-c(1, 2, 17, 24)]
+no_names =  filtered_match_duplicates[-c(1, 2, 18, 23)]
 tsne_playoffs = tsne(as.matrix(no_names), 
                      k = 2, 
                      initial_dims = length(names(no_names)), 
