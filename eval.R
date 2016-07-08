@@ -32,7 +32,7 @@ outcomeConfidence = function(minday, data, predictProbs){
 #################
 ## predictions and confidence scores for different models
 ## for the last championship (30 days)
-minday = max(playoffs$id) - 30
+minday = max(playoffs$id) - 14
 
 # temporary, until the last match is out
 #playoffs = playoffs[1:(nrow(playoffs) - 2),]
@@ -42,13 +42,13 @@ playoffs_cat$goals = NULL
 playoffs_goals = playoffs
 playoffs_goals$result = NULL
 
+source("poisson.R")
+resPoisson = outcomeConfidence(minday, playoffs_goals, predictProbsPoissonBasic)
+
 source("log_reg.R")
 resMultinomHeuristic = outcomeConfidence(minday, playoffs_cat, predictProbsMultinomHeuristic)
 resMultinom = outcomeConfidence(minday, playoffs_cat, predictProbsMultinom)
 resLogRegHard = outcomeConfidence(minday, playoffs_cat, predictProbsHard)
-
-source("poisson.R")
-resPoisson = outcomeConfidence(minday, playoffs_goals, predictProbsPoissonBasic)
 
 source("rf.R")
 resRandomForest = outcomeConfidence(minday, playoffs_cat, predictProbsRandomForest)
