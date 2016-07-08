@@ -32,7 +32,7 @@ outcomeConfidence = function(minday, data, predictProbs){
 #################
 ## predictions and confidence scores for different models
 ## for the last championship (30 days)
-minday = max(playoffs$id) - 14
+minday = max(playoffs$id) - 30
 
 # temporary, until the last match is out
 #playoffs = playoffs[1:(nrow(playoffs) - 2),]
@@ -73,7 +73,8 @@ precisionRandomForest = getPrecision(resRandomForest, playoffs)
 
 plot(precisionMultinomHeuristic$pr, ylim=c(0,1), type="l", 
      xlab="prediction ranked by decreasing confidence score", 
-     ylab="Precision (correct proportion of guesses)")
+     ylab="Precision (correct proportion of guesses)",
+     xlim=c(0,100))
 lines(precisionMultinom$pr, col="red")
 lines(precisionLogregHard$pr, col="purple")
 lines(precisionPoisson$pr, col="green")
